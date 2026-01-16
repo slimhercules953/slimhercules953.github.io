@@ -8,12 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .terminal-glow { box-shadow: 0 0 15px rgba(34, 197, 94, 0.2); }
-    body { background-color: #0f172a; }
+    body { background-color: #0f172a; scroll-behavior: smooth; }
   </style>
 </head>
 
 <body class="text-slate-300">
-  <!-- NAV -->
   <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
       <div class="font-mono text-green-500 font-bold text-xl tracking-tighter">
@@ -21,17 +20,14 @@
       </div>
       <div class="hidden md:flex space-x-8 text-sm font-medium">
         <a href="#about" class="hover:text-green-500 transition">About</a>
-        <a href="#skills" class="hover:text-green-500 transition">Skills</a>
+        <a href="skills.html" class="hover:text-green-500 transition">Skills</a>
+        <a href="projects.html" class="hover:text-green-500 transition">Projects</a>
         <a href="#experience" class="hover:text-green-500 transition">Experience</a>
-        <a href="#education" class="hover:text-green-500 transition">Education</a>
-        <a href="#awards" class="hover:text-green-500 transition">Awards</a>
-        <a href="projects.html" class="hover:text-green-500 transition font-bold text-green-500">Projects</a>
         <a href="#contact" class="hover:text-green-500 transition text-green-500 border border-green-500/50 px-3 py-1 rounded">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO / TERMINAL -->
   <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
     <div class="bg-slate-950 rounded-lg overflow-hidden border border-slate-800 terminal-glow">
       <div class="bg-slate-800 px-4 py-2 flex gap-2">
@@ -42,245 +38,110 @@
 
       <div class="p-6 font-mono">
         <p class="text-green-500">cat bio.txt</p>
-
         <h1 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-2">Thomas Etter</h1>
-        <p class="text-xl text-slate-400 mb-6">IT Student // Guest Engagement // Lifeguard & CPR-Trained</p>
+        <p class="text-xl text-slate-400 mb-6">IT Student // Guest Engagement // Eagle Scout</p>
 
         <p class="leading-relaxed max-w-2xl text-slate-300">
-          I’m an IT student with a strong focus on attention to detail, communication, and problem-solving.
-          I’ve built real-world responsibility through guest-facing roles and safety-critical work, and I’m
-          continuing to grow my technical skills through coding and hands-on learning.
+          I’m an IT student focused on technical problem-solving and communication. 
+          With a background in safety-critical roles and a passion for automation, 
+          I bridge the gap between technical execution and guest engagement.
         </p>
 
-        <div class="mt-6 flex flex-wrap gap-3 text-xs">
-          <div class="mt-8">
-            <a href="resume.pdf" download class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-slate-950 px-5 py-2.5 rounded font-bold transition">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-              Download Resume (PDF)
-            </a>
+        <div class="mt-8 flex flex-wrap gap-4 items-center">
+          <a href="resume.pdf" download class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-slate-950 px-5 py-2.5 rounded font-bold transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            Download Resume
+          </a>
+          <div class="flex flex-wrap gap-2 text-[10px] uppercase tracking-wider font-bold text-slate-500">
+            <span class="px-2 py-1 border border-slate-800 rounded">Virginia Beach, VA</span>
+            <span class="px-2 py-1 border border-slate-800 rounded">JavaScript</span>
+            <span class="px-2 py-1 border border-slate-800 rounded">Python</span>
           </div>
-          <span class="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Virginia Beach, VA</span>
-          <span class="px-3 py-1 rounded-full border border-slate-700 text-slate-300">JavaScript (3 years)</span>
-          <span class="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Python (1 year)</span>
-          <span class="px-3 py-1 rounded-full border border-slate-700 text-slate-300">C# (1 year)</span>
-          <span class="px-3 py-1 rounded-full border border-slate-700 text-slate-300">CPR / First Aid</span>
         </div>
-
         <p class="mt-6 text-green-500 animate-pulse">_</p>
       </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about" class="max-w-5xl mx-auto px-6 py-12">
     <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
       <span class="text-green-500 mr-2">00.</span> About
     </h2>
-
     <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
       <p class="text-slate-300 leading-relaxed">
-        I’ve learned that details matter—whether it’s scanning a pool safely as a lifeguard or debugging code
-        when one small mistake can break an entire program. I bring that same attention and discipline to my
-        IT growth, with a strong foundation in communication and leadership.
+        I’ve learned that details matter—whether it’s scanning a pool safely as a lifeguard or debugging code. 
+        I bring attention, discipline, and a strong foundation in leadership to my IT growth.
       </p>
-
       <div class="mt-6 grid md:grid-cols-2 gap-4 text-sm">
         <div class="bg-slate-900/40 p-4 rounded border border-slate-700">
-          <p class="text-white font-semibold">Strengths</p>
-          <p class="text-slate-400">Attention to detail, leadership, communication, teamwork</p>
+          <p class="text-white font-semibold italic text-green-500">Featured Skills</p>
+          <p class="text-slate-400 mt-1">JavaScript, Node.js, Microsoft Office Certified</p>
+          <a href="skills.html" class="text-xs text-green-500 mt-2 inline-block hover:underline">View all skills &rarr;</a>
         </div>
         <div class="bg-slate-900/40 p-4 rounded border border-slate-700">
-          <p class="text-white font-semibold">Languages</p>
-          <p class="text-slate-400">English (15 years), Spanish (5 years — conversational)</p>
+          <p class="text-white font-semibold italic text-green-500">Top Project</p>
+          <p class="text-slate-400 mt-1">Aesthetic King: Discord Automation Bot</p>
+          <a href="projects.html" class="text-xs text-green-500 mt-2 inline-block hover:underline">View all projects &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-12">
+  <section id="experience" class="max-w-5xl mx-auto px-6 py-12">
     <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-      <span class="text-green-500 mr-2">01.</span> Skills & Tools
+      <span class="text-green-500 mr-2">01.</span> Experience
     </h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-      <div class="bg-slate-800/50 p-4 rounded border border-slate-700 hover:border-green-500/50 transition">
-        <p class="font-bold text-white">Microsoft Office</p>
-        <p class="text-sm text-slate-500">Word, Excel, PowerPoint</p>
+    <div class="space-y-6">
+      <div class="border-l-2 border-slate-800 pl-6 relative">
+        <div class="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-2"></div>
+        <h3 class="text-xl font-bold text-white">Guest Engagement Admissions Host</h3>
+        <p class="text-green-500 text-sm">Virginia Beach Aquarium | 2024 – Present</p>
       </div>
-      <div class="bg-slate-800/50 p-4 rounded border border-slate-700 hover:border-green-500/50 transition">
-        <p class="font-bold text-white">Google Workspace</p>
-        <p class="text-sm text-slate-500">Docs, Sheets, Drive</p>
+      <div class="border-l-2 border-slate-800 pl-6 relative">
+        <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7px] top-2"></div>
+        <h3 class="text-xl font-bold text-white">Seasonal Lifeguard & Counselor</h3>
+        <p class="text-slate-500 text-sm">Ocean Breeze | 2020 – 2024</p>
       </div>
-      <div class="bg-slate-800/50 p-4 rounded border border-slate-700 hover:border-green-500/50 transition">
-        <p class="font-bold text-white">Programming</p>
-        <p class="text-sm text-slate-500">JavaScript, Python, C#</p>
-      </div>
-      <div class="bg-slate-800/50 p-4 rounded border border-slate-700 hover:border-green-500/50 transition">
-        <p class="font-bold text-white">Certs & Safety</p>
-        <p class="text-sm text-slate-500">CPR, First Aid</p>
-      </div>
-    </div>
-
-    <div class="mt-8 bg-slate-800/30 p-6 rounded-xl border border-slate-700">
-      <p class="text-white font-semibold mb-2">Notes from experience</p>
-      <ul class="space-y-2 text-sm text-slate-400 leading-relaxed">
-        <li><span class="text-green-500 font-mono">+</span> Chemistry lab work reinforced following procedures in order to reduce risk and stay safe.</li>
-        <li><span class="text-green-500 font-mono">+</span> Coding taught me how one small error (like a misspelled variable) can break everything—and how to debug methodically.</li>
-        <li><span class="text-green-500 font-mono">+</span> Lifeguarding sharpened my ability to scan quickly, notice small details, and respond under pressure.</li>
-      </ul>
     </div>
   </section>
 
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
-  <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-    <span class="text-green-500 mr-2">02.</span> Featured Projects
-  </h2>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="group bg-slate-900 border border-slate-800 p-6 rounded-xl hover:border-green-500/50 transition">
-      <div class="flex justify-between items-start mb-4">
-        <div class="text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-          </svg>
-        </div>
-        
-        <a href="https://github.com/slimhercules953/aesthetic-king" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </a>
-      </div>
-
-      <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition">
-        <a href="https://github.com/slimhercules953/aesthetic-king" target="_blank" rel="noopener noreferrer">Aesthetic King</a>
-      </h3>
-
-      <p class="text-slate-400 text-sm mt-2 mb-4">A discord bot for users to use that gives them aesthetics for their discord profile</p>
-      
-      <div class="flex gap-3 text-xs font-mono text-slate-500">
-        <span>JavaScript</span>
-        <span>Node.js</span>
-        <span>Discord.js</span>
-      </div>
+  <section class="max-w-5xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+  <div>
+    <h2 class="text-xl font-bold text-white mb-4 italic font-mono text-green-500">Education</h2>
+    
+    <div class="mb-6">
+      <p class="text-white font-semibold">Tidewater Community College</p>
+      <p class="text-sm text-slate-400">A.S. in Information Technology</p>
+      <p class="text-xs text-green-500 font-mono italic">Expected Graduation: May 2027</p>
     </div>
+
+    <div>
+      <p class="text-white font-semibold">Landstown High School</p>
+      <p class="text-sm text-slate-500">Advanced STEM Academy Diploma</p>
+    </div>
+  </div>
+  
+  <div>
+    <h2 class="text-xl font-bold text-white mb-4 italic font-mono text-green-500">Awards</h2>
+    <ul class="text-sm text-slate-400 space-y-1">
+      <li>+ Eagle Scout (2021)</li>
+      <li>+ Spanish Honor Society</li>
+    </ul>
   </div>
 </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-      <span class="text-green-500 mr-2">03.</span> Experience
-    </h2>
-
-    <div class="space-y-6">
-      <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-          <h3 class="text-xl font-bold text-white">Guest Engagement Admissions Host</h3>
-          <p class="text-sm text-slate-500 font-mono">Fall 2024 – Current</p>
-        </div>
-        <p class="text-green-500 text-sm mt-1">Virginia Beach Aquarium — Virginia Beach, VA</p>
-        <ul class="mt-4 space-y-2 text-sm text-slate-400">
-          <li><span class="text-green-500 font-mono">+</span> Engage with guests to help ensure a great experience.</li>
-          <li><span class="text-green-500 font-mono">+</span> Verify ticket dates and times to ensure valid admissions.</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-          <h3 class="text-xl font-bold text-white">Lifeguard Camp Counselor</h3>
-          <p class="text-sm text-slate-500 font-mono">June 2024 – August 2024</p>
-        </div>
-        <p class="text-green-500 text-sm mt-1">Ocean Breeze — Virginia Beach, VA</p>
-        <ul class="mt-4 space-y-2 text-sm text-slate-400">
-          <li><span class="text-green-500 font-mono">+</span> Taught rising 3rd–8th graders lifeguard skills and water safety fundamentals.</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-          <h3 class="text-xl font-bold text-white">Seasonal Lifeguard</h3>
-          <p class="text-sm text-slate-500 font-mono">Summer 2020 – Summer 2024</p>
-        </div>
-        <p class="text-green-500 text-sm mt-1">Ocean Breeze — Virginia Beach, VA</p>
-        <ul class="mt-4 space-y-2 text-sm text-slate-400">
-          <li><span class="text-green-500 font-mono">+</span> Scanned water vigilantly to prevent accidents and respond quickly to struggling swimmers.</li>
-          <li><span class="text-green-500 font-mono">+</span> CPR-trained and practiced checking breathing and pulse in emergencies.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-      <span class="text-green-500 mr-2">04.</span> Education
-    </h2>
-
-    <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-        <h3 class="text-xl font-bold text-white">Landstown High School — Advanced Diploma</h3>
-        <p class="text-sm text-slate-500 font-mono">Sep 2017 – Jun 2022</p>
-      </div>
-      <p class="text-slate-400 mt-3 text-sm leading-relaxed">
-        Graduated with an Advanced Diploma from the Landstown Governor’s STEM Academy.
-      </p>
-    </div>
-  </section>
-
-  <!-- AWARDS -->
-  <section id="awards" class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-      <span class="text-green-500 mr-2">05.</span> Awards & Recognition
-    </h2>
-
-    <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
-      <ul class="space-y-3 text-sm text-slate-400">
-        <li class="flex gap-3">
-          <span class="text-green-500 font-mono">+</span>
-          <span><span class="text-white font-semibold">Eagle Scout</span> — awarded September 2021</span>
-        </li>
-        <li class="flex gap-3">
-          <span class="text-green-500 font-mono">+</span>
-          <span><span class="text-white font-semibold">Microsoft Office certifications</span></span>
-        </li>
-        <li class="flex gap-3">
-          <span class="text-green-500 font-mono">+</span>
-          <span><span class="text-white font-semibold">Spanish Honor Society</span> — member (2 years)</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
   <footer id="contact" class="max-w-5xl mx-auto px-6 py-20 text-center border-t border-slate-800">
     <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
     <p class="text-slate-400 mb-8 max-w-md mx-auto">
-      I’m open to internships and entry-level IT opportunities. If you’d like to connect, feel free to email me.
+      I’m open to internships and entry-level IT opportunities.
     </p>
 
     <div class="flex flex-col md:flex-row gap-3 justify-center">
-      <a
-        href="mailto:Tometter03@gmail.com"
-        class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-green-500/50 text-green-400 hover:bg-green-500/10 transition font-mono"
-      >
-        Email Me
-      </a>
-      <a
-        href="#"
-        class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800/50 transition font-mono"
-      >
-        LinkedIn
-      </a>
-      <a
-        href="https://github.com/slimhercules953/"
-        class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800/50 transition font-mono"
-      >
-        GitHub
-      </a>
+      <a href="mailto:Tometter03@gmail.com" class="px-5 py-3 rounded-lg border border-green-500/50 text-green-400 hover:bg-green-500/10 transition font-mono">Email Me</a>
+      <a href="https://www.linkedin.com/in/thomas-etter-666494232/" target="_blank" class="px-5 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800/50 transition font-mono">LinkedIn</a>
+      <a href="https://github.com/slimhercules953/" target="_blank" class="px-5 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800/50 transition font-mono">GitHub</a>
     </div>
 
     <p class="mt-10 text-xs text-slate-500 font-mono">
