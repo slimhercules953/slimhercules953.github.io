@@ -50,44 +50,59 @@
             <a href="https://www.linkedin.com/in/thomas-etter-666494232/" target="_blank" class="text-slate-300 hover:text-white transition">Thomas Etter</a>
           </div>
 
-          <div class="flex items-center gap-4 group">
+          <div class=" flex items-center gap-4 group">
             <div class="p-3 bg-slate-900 border border-slate-800 rounded-lg group-hover:border-green-500/50 transition">
                <span class="text-green-500">GitHub:</span>
             </div>
-            <a href="https://github.com/slimhercules953/" target="_blank" class="text-slate-300 hover:text-white transition">slimhercules953</a>
+            <a href="https://github.com/slimhercules953/" target="_blank" class="text-slate-300 hover:text-white transition">Slimhercules953</a>
           </div>
 
           <div class="flex items-center gap-4 group">
             <div class="p-3 bg-slate-900 border border-slate-800 rounded-lg group-hover:border-green-500/50 transition">
                <span class="text-green-500">Discord:</span>
             </div>
-            <span class="text-slate-300">@yourdiscordusername</span>
+            <a href="https://discordapp.com/users/567386567300087821" 
+              target="_blank" 
+              class="text-slate-300 hover:text-white transition">
+              P4rz1val
+            </a>
           </div>
         </div>
       </div>
 
      <div class="bg-slate-950 border border-slate-800 p-8 rounded-2xl terminal-glow">
-  <form id="contact-form" class="space-y-4">
-    <div>
-      <label class="block text-xs font-mono text-slate-500 uppercase mb-2">Name</label>
-      <input type="text" name="name" required class="w-full p-3 rounded border text-white text-sm" placeholder="John Doe">
+      <form id="contact-form" class="space-y-6">
+        <div class="group">
+          <label class="block text-xs font-mono text-slate-500 uppercase mb-2 group-focus-within:text-green-500 transition">Name</label>
+          <input type="text" name="name" required 
+            class="w-full p-3 bg-slate-900/50 border border-slate-800 rounded text-white text-sm focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition appearance-none" 
+            placeholder="John Doe">
+        </div>
+
+        <div class="group">
+          <label class="block text-xs font-mono text-slate-500 uppercase mb-2 group-focus-within:text-green-500 transition">Email Address</label>
+          <input type="email" name="email" required 
+            class="w-full p-3 bg-slate-900/50 border border-slate-800 rounded text-white text-sm focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition appearance-none" 
+            placeholder="john@example.com">
+        </div>
+
+        <div class="group">
+          <label class="block text-xs font-mono text-slate-500 uppercase mb-2 group-focus-within:text-green-500 transition">Message</label>
+          <textarea name="message" rows="5" required 
+            class="w-full p-3 bg-slate-900/50 border border-slate-800 rounded text-white text-sm focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition appearance-none resize-none" 
+            placeholder="How can I help you?"></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn" 
+          class="w-full bg-green-600 hover:bg-green-500 text-slate-950 font-bold py-4 rounded transition uppercase text-xs tracking-widest font-mono shadow-lg shadow-green-900/20 active:scale-[0.98]">
+          Send Message
+        </button>
+      </form>
+
+      <p id="success-msg" class="hidden mt-4 text-center text-green-500 font-mono text-sm uppercase tracking-widest animate-pulse">
+        [!] Message transmitted successfully.
+      </p>
     </div>
-    <div>
-      <label class="block text-xs font-mono text-slate-500 uppercase mb-2">Email Address</label>
-      <input type="email" name="email" required class="w-full p-3 rounded border text-white text-sm" placeholder="john@example.com">
-    </div>
-    <div>
-      <label class="block text-xs font-mono text-slate-500 uppercase mb-2">Message</label>
-      <textarea name="message" rows="5" required class="w-full p-3 rounded border text-white text-sm" placeholder="How can I help you?"></textarea>
-    </div>
-    <button type="submit" id="submit-btn" class="w-full bg-green-600 hover:bg-green-500 text-slate-950 font-bold py-3 rounded transition uppercase text-xs tracking-widest font-mono">
-      Send Message
-    </button>
-  </form>
-  <p id="success-msg" class="hidden mt-4 text-center text-green-500 font-mono text-sm uppercase tracking-widest">
-    [!] Message transmitted successfully.
-  </p>
-</div>
 
     </div>
   </main>
