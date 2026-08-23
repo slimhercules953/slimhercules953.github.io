@@ -1,0 +1,733 @@
+<section id="infrastructure" class="infrastructure-section">
+  <div class="infra-orb infra-orb-left"></div>
+  <div class="infra-orb infra-orb-right"></div>
+
+  <div class="container">
+    <header class="section-heading infrastructure-heading">
+      <div>
+        <p class="eyebrow section-eyebrow">02 / Infrastructure</p>
+
+        <h2>
+          The systems
+          <br />
+          <span>behind the work.</span>
+        </h2>
+      </div>
+
+      <p class="section-intro">
+        Etter Digital is more than a collection of projects. The
+        applications live inside a continuously evolving self-hosted
+        environment built around Linux, networking, monitoring, and
+        remote access.
+      </p>
+    </header>
+
+    <div class="infra-status-strip">
+      <div>
+        <span class="status-dot"></span>
+        <strong>Operational Environment</strong>
+      </div>
+
+      <span class="mono">PRIMARY HOST / RASPBERRY PI</span>
+      <span class="mono">EDGE / CLOUDFLARE</span>
+    </div>
+
+    <div class="topology-shell">
+      <div class="topology-grid" aria-hidden="true"></div>
+
+      <div class="topology">
+        <div class="topology-layer">
+          <div class="topology-node internet-node">
+            <span class="node-icon">◎</span>
+
+            <div>
+              <small class="mono">PUBLIC NETWORK</small>
+              <strong>Internet</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection">
+          <span class="connection-flow"></span>
+        </div>
+
+        <div class="topology-layer">
+          <div class="topology-node edge-node">
+            <span class="node-icon">CF</span>
+
+            <div>
+              <small class="mono">EDGE / DNS / ACCESS</small>
+              <strong>Cloudflare</strong>
+            </div>
+
+            <span class="node-state online">
+              Operational
+            </span>
+          </div>
+        </div>
+
+        <div class="connection">
+          <span class="connection-flow"></span>
+        </div>
+
+        <div class="topology-layer">
+          <div class="topology-node host-node">
+            <div class="host-node-header">
+              <span class="node-icon raspberry">π</span>
+
+              <div>
+                <small class="mono">PRIMARY HOST</small>
+                <strong>Raspberry Pi</strong>
+              </div>
+            </div>
+
+            <div class="host-node-meta">
+              <span>Linux</span>
+              <span>ARM64</span>
+              <span>Always On</span>
+            </div>
+
+            <span class="node-state online">
+              <i></i>
+              Online
+            </span>
+          </div>
+        </div>
+
+        <div class="branch-line"></div>
+
+        <div class="service-grid">
+          <article class="service-node service-purple">
+            <div class="service-node-top">
+              <span class="service-number mono">01</span>
+
+              <span class="node-state online">
+                <i></i>
+                Operational
+              </span>
+            </div>
+
+            <span class="service-icon">CH</span>
+
+            <h3>Central Hub</h3>
+
+            <p>
+              Private management and operations platform for projects,
+              tasks, systems, and service integrations.
+            </p>
+
+            <div class="service-tags">
+              <span>Next.js</span>
+              <span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="service-node service-blue">
+            <div class="service-node-top">
+              <span class="service-number mono">02</span>
+
+              <span class="node-state online">
+                <i></i>
+                Connected
+              </span>
+            </div>
+
+            <span class="service-icon">PM</span>
+
+            <h3>Pi Monitor</h3>
+
+            <p>
+              Host metrics and service information exposed to trusted
+              applications through a controlled monitoring endpoint.
+            </p>
+
+            <div class="service-tags">
+              <span>Linux</span>
+              <span>Monitoring</span>
+            </div>
+          </article>
+
+          <article class="service-node service-green">
+            <div class="service-node-top">
+              <span class="service-number mono">03</span>
+
+              <span class="node-state online">
+                <i></i>
+                Online
+              </span>
+            </div>
+
+            <span class="service-icon">AK</span>
+
+            <h3>Aesthetic King</h3>
+
+            <p>
+              Persistent Discord automation service managed as an
+              always-on application process.
+            </p>
+
+            <div class="service-tags">
+              <span>Node.js</span>
+              <span>PM2</span>
+            </div>
+          </article>
+
+          <article class="service-node service-muted">
+            <div class="service-node-top">
+              <span class="service-number mono">04</span>
+
+              <span class="node-state planned">
+                Evolving
+              </span>
+            </div>
+
+            <span class="service-icon">+</span>
+
+            <h3>Future Services</h3>
+
+            <p>
+              New infrastructure is added only as it is actually built,
+              tested, and worth operating.
+            </p>
+
+            <div class="service-tags">
+              <span>Planned</span>
+              <span>Documented</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="infrastructure-details">
+      <div class="infra-detail-column">
+        <p class="mono detail-label">
+          OPERATING PRINCIPLE
+        </p>
+
+        <h3>
+          Public portfolio.
+          <br />
+          Private control plane.
+        </h3>
+
+        <p>
+          The public site documents the work. Administrative dashboards,
+          internal metrics, authentication systems, and sensitive
+          infrastructure details remain behind controlled access.
+        </p>
+      </div>
+
+      <div class="infra-detail-grid">
+        <article>
+          <span class="detail-index mono">A</span>
+          <strong>Expose less</strong>
+
+          <p>
+            Only public-facing information belongs on public endpoints.
+          </p>
+        </article>
+
+        <article>
+          <span class="detail-index mono">B</span>
+          <strong>Monitor continuously</strong>
+
+          <p>
+            Services are built with observability and operations in mind.
+          </p>
+        </article>
+
+        <article>
+          <span class="detail-index mono">C</span>
+          <strong>Document reality</strong>
+
+          <p>
+            Operational, in-development, and planned systems stay clearly
+            distinguished.
+          </p>
+        </article>
+
+        <article>
+          <span class="detail-index mono">D</span>
+          <strong>Iterate deliberately</strong>
+
+          <p>
+            Infrastructure grows when there is a real reason to operate it.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .infrastructure-section {
+    position: relative;
+    overflow: hidden;
+    padding: 9rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.06);
+  }
+
+  .infra-orb {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+  }
+
+  .infra-orb-left {
+    left: -18rem;
+    top: 25%;
+    width: 38rem;
+    height: 38rem;
+    background: rgba(89, 61, 220, 0.06);
+  }
+
+  .infra-orb-right {
+    right: -16rem;
+    bottom: 10%;
+    width: 34rem;
+    height: 34rem;
+    background: rgba(55, 93, 220, 0.05);
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 5rem;
+    align-items: end;
+    margin-bottom: 6rem;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+  }
+
+  .section-heading h2 span {
+    color: #7569a0;
+  }
+
+  .section-intro {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--status-online);
+    box-shadow: 0 0 8px rgba(62, 240, 143, 0.5);
+  }
+
+  .infra-status-strip {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  .infra-status-strip div {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .infra-status-strip > span {
+    color: #686171;
+    font-size: 0.48rem;
+  }
+
+  .topology-shell {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.16);
+    border-radius: 16px;
+    background: #080a10;
+  }
+
+  .topology-grid {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.2;
+    background-image:
+      linear-gradient(
+        rgba(124, 92, 255, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(124, 92, 255, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 34px 34px;
+  }
+
+  .topology {
+    position: relative;
+    padding: 4rem;
+  }
+
+  .topology-layer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .topology-node {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 260px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(7, 9, 15, 0.82);
+  }
+
+  .topology-node > div:not(.host-node-header):not(.host-node-meta) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .topology-node small {
+    display: block;
+    color: #706783;
+    font-size: 0.5rem;
+    letter-spacing: 0.06em;
+  }
+
+  .topology-node strong {
+    display: block;
+    color: #f1f1f5;
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .node-icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(124, 92, 255, 0.32);
+    border-radius: 9px;
+    color: #9c89ff;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .host-node {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 370px;
+  }
+
+  .host-node-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .host-node-header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .host-node-header small,
+  .host-node-header strong {
+    display: block;
+  }
+
+  .host-node-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .host-node-meta span,
+  .service-tags span {
+    padding: 0.3rem;
+    border: 1px solid var(--border);
+    color: #777f8d;
+    font-family: var(--font-mono);
+    font-size: 0.46rem;
+  }
+
+  .node-state {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: auto;
+    padding: 0.35rem 0.5rem;
+    border: 1px solid rgba(62, 240, 143, 0.12);
+    border-radius: 999px;
+    color: #7ebb98;
+    font-family: var(--font-mono);
+    font-size: 0.44rem;
+    text-transform: uppercase;
+  }
+
+  .node-state i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--status-online);
+    box-shadow: 0 0 8px rgba(62, 240, 143, 0.4);
+  }
+
+  .node-state.planned {
+    border-color: rgba(124, 92, 255, 0.16);
+    color: #867da0;
+  }
+
+  .host-node .node-state {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .connection {
+    position: relative;
+    width: 1px;
+    height: 58px;
+    margin: 0 auto;
+    background: rgba(124, 92, 255, 0.4);
+  }
+
+  .connection-flow {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 14px;
+    background: #8068ff;
+    box-shadow: 0 0 12px rgba(128, 104, 255, 0.8);
+    transform: translateX(-50%);
+    animation: data-flow 2.2s linear infinite;
+  }
+
+  @keyframes data-flow {
+    from {
+      top: 0;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    to {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
+  .branch-line {
+    position: relative;
+    height: 70px;
+  }
+
+  .branch-line::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 35px;
+    background: rgba(124, 92, 255, 0.32);
+  }
+
+  .branch-line::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 1px;
+    background: rgba(124, 92, 255, 0.22);
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .service-node {
+    position: relative;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(7, 9, 15, 0.72);
+  }
+
+  .service-node-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .service-number {
+    color: #625c74;
+    font-size: 0.5rem;
+  }
+
+  .service-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 1rem;
+    border: 1px solid rgba(124, 92, 255, 0.25);
+    border-radius: 8px;
+    color: #9d8aff;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+
+  .service-node h3 {
+    margin: 1rem 0 0.65rem;
+  }
+
+  .service-node p {
+    color: #777f8e;
+    font-size: 0.76rem;
+    line-height: 1.7;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 1rem;
+  }
+
+  .infrastructure-details {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 6rem;
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .detail-label {
+    color: #725fff;
+    font-size: 0.56rem;
+  }
+
+  .infra-detail-column h3 {
+    margin: 1rem 0 1.5rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }
+
+  .infra-detail-column p {
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .infra-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .infra-detail-grid article {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .infra-detail-grid strong {
+    display: block;
+    margin: 1rem 0 0.6rem;
+  }
+
+  .infra-detail-grid p {
+    margin: 0;
+    color: #777f8d;
+    font-size: 0.76rem;
+    line-height: 1.7;
+  }
+
+  .detail-index {
+    color: #5f596c;
+    font-size: 0.5rem;
+  }
+
+  @media (max-width: 1180px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .section-heading,
+    .infrastructure-details {
+      grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .infrastructure-section {
+      padding: 6rem 0;
+    }
+
+    .infra-status-strip {
+      grid-template-columns: 1fr;
+    }
+
+    .topology {
+      padding: 2rem 1rem;
+    }
+
+    .topology-node,
+    .host-node {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .host-node .node-state {
+      position: static;
+      margin: 1rem 0 0;
+    }
+
+    .service-grid,
+    .infra-detail-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .branch-line::after {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .connection-flow {
+      animation: none;
+    }
+  }
+</style>

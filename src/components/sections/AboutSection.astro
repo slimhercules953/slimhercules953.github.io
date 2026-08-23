@@ -1,0 +1,410 @@
+<section id="about" class="about-section">
+  <div class="container">
+    <header class="section-heading about-heading">
+      <div>
+        <p class="eyebrow section-eyebrow">
+          03 / About
+        </p>
+
+        <h2>
+          Technology is better
+          <br />
+          <span>when you operate it.</span>
+        </h2>
+      </div>
+
+      <div class="about-intro">
+        <p>
+          I'm Thomas Etter, an IT and Network Administration student
+          building practical experience through systems I design,
+          deploy, troubleshoot, and maintain myself.
+        </p>
+
+        <p>
+          My interests sit at the intersection of infrastructure,
+          networking, Linux, self-hosting, automation, databases,
+          monitoring, and software development.
+        </p>
+      </div>
+    </header>
+
+    <div class="about-layout">
+      <div class="about-statement">
+        <span class="statement-index mono">
+          APPROACH / 001
+        </span>
+
+        <blockquote>
+          I don't want to simply say I know a technology.
+          <span>
+            I want the project beside it to prove why.
+          </span>
+        </blockquote>
+
+        <p>
+          Etter Digital is where I document that process — from writing
+          software to deploying it on Linux, connecting services,
+          managing databases, troubleshooting failures, and thinking
+          about what happens after an application goes live.
+        </p>
+      </div>
+
+      <div class="principles">
+        <article>
+          <span class="principle-number mono">01</span>
+
+          <div>
+            <h3>Build for a reason</h3>
+
+            <p>
+              Projects should solve a real problem, automate something
+              useful, or teach a technical concept through implementation.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="principle-number mono">02</span>
+
+          <div>
+            <h3>Understand the system</h3>
+
+            <p>
+              Application code is only one layer. Hosting, networking,
+              processes, databases, access, and failure modes matter too.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="principle-number mono">03</span>
+
+          <div>
+            <h3>Keep learning in public</h3>
+
+            <p>
+              This portfolio evolves alongside my technical ability. New
+              systems appear when they are actually built and understood.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="skills-evidence">
+      <div class="skills-header">
+        <div>
+          <p class="mono detail-label">
+            TECHNICAL EVIDENCE
+          </p>
+
+          <h3>Skills tied to actual work.</h3>
+        </div>
+
+        <p>
+          No arbitrary percentages. The technologies below are connected
+          to projects, coursework, infrastructure, or hands-on work.
+        </p>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-item">
+          <div class="skill-top">
+            <span class="skill-code mono">SYS-01</span>
+            <span class="skill-symbol">_</span>
+          </div>
+
+          <h4>Linux</h4>
+
+          <p class="skill-used mono">USED IN</p>
+
+          <ul>
+            <li>Raspberry Pi infrastructure</li>
+            <li>Application deployment</li>
+            <li>Process management</li>
+            <li>Remote administration</li>
+          </ul>
+
+          <div class="skill-related">
+            SSH / permissions / processes / networking / logging
+          </div>
+        </article>
+
+        <article class="skill-item">
+          <div class="skill-top">
+            <span class="skill-code mono">NET-02</span>
+            <span class="skill-symbol">⌁</span>
+          </div>
+
+          <h4>Networking</h4>
+
+          <p class="skill-used mono">RELATED WORK</p>
+
+          <ul>
+            <li>Network Administration coursework</li>
+            <li>Cloudflare routing</li>
+            <li>Remote service access</li>
+            <li>Infrastructure architecture</li>
+          </ul>
+
+          <div class="skill-related">
+            TCP/IP / routing / switching / DNS / services
+          </div>
+        </article>
+
+        <article class="skill-item">
+          <div class="skill-top">
+            <span class="skill-code mono">DEV-03</span>
+            <span class="skill-symbol">{ }</span>
+          </div>
+
+          <h4>Development</h4>
+
+          <p class="skill-used mono">USED IN</p>
+
+          <ul>
+            <li>Central Hub</li>
+            <li>Aesthetic King</li>
+            <li>Etter Digital</li>
+            <li>Automation projects</li>
+          </ul>
+
+          <div class="skill-related">
+            JavaScript / TypeScript / Node.js / APIs / Git
+          </div>
+        </article>
+
+        <article class="skill-item">
+          <div class="skill-top">
+            <span class="skill-code mono">DAT-04</span>
+            <span class="skill-symbol">◎</span>
+          </div>
+
+          <h4>Databases</h4>
+
+          <p class="skill-used mono">USED IN</p>
+
+          <ul>
+            <li>Central Hub application data</li>
+            <li>Task persistence</li>
+            <li>Project management</li>
+            <li>System records</li>
+          </ul>
+
+          <div class="skill-related">
+            PostgreSQL / Prisma / schema design / migrations
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    position: relative;
+    overflow: hidden;
+    padding: 9rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.06);
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 5rem;
+    align-items: end;
+    margin-bottom: 6rem;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+  }
+
+  .section-heading h2 span {
+    color: #7569a0;
+  }
+
+  .about-intro p {
+    margin: 0 0 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 7rem;
+  }
+
+  .statement-index {
+    color: #6d627d;
+    font-size: 0.55rem;
+  }
+
+  .about-statement blockquote {
+    margin: 1.4rem 0 2rem;
+    max-width: 800px;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+  }
+
+  .about-statement blockquote span {
+    color: #786b9b;
+  }
+
+  .about-statement > p {
+    max-width: 670px;
+    color: var(--text-muted);
+    line-height: 1.9;
+  }
+
+  .principles {
+    border-top: 1px solid var(--border);
+  }
+
+  .principles article {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .principle-number {
+    color: #665e74;
+    font-size: 0.55rem;
+  }
+
+  .principles h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .principles p {
+    color: var(--text-muted);
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .skills-evidence {
+    margin-top: 8rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .skills-header {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 4rem;
+    align-items: end;
+    margin-bottom: 3rem;
+  }
+
+  .skills-header h3 {
+    margin: 0;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    letter-spacing: -0.05em;
+  }
+
+  .skills-header > p {
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .detail-label {
+    color: #725fff;
+    font-size: 0.56rem;
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skill-item {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .skill-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill-code {
+    color: #625c74;
+    font-size: 0.5rem;
+  }
+
+  .skill-symbol {
+    color: #8d76ff;
+  }
+
+  .skill-item h4 {
+    margin: 2rem 0;
+    font-size: 1.45rem;
+  }
+
+  .skill-used {
+    color: #7567a0;
+    font-size: 0.5rem;
+  }
+
+  .skill-item ul {
+    padding-left: 1rem;
+    color: #9ba1ad;
+    font-size: 0.76rem;
+    line-height: 1.8;
+  }
+
+  .skill-related {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: #625c74;
+    font-family: var(--font-mono);
+    font-size: 0.48rem;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1180px) {
+    .skill-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .section-heading,
+    .skills-header,
+    .about-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .section-heading,
+    .skills-header {
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .about-section {
+      padding: 6rem 0;
+    }
+
+    .skill-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .about-statement blockquote {
+      font-size: 2.3rem;
+    }
+  }
+</style>

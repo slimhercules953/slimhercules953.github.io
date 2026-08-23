@@ -1,0 +1,2076 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Central Hub | Etter Digital"
+  description="Central Hub is a self-hosted operations dashboard for tracking projects, tasks, systems, services, and integrations across Etter Digital."
+>
+  <!-- HERO -->
+
+  <section class="case-hero">
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
+
+    <div class="container case-hero-grid">
+      <div class="case-hero-copy">
+        <p class="eyebrow">
+          Project Case Study / Central Hub
+        </p>
+
+        <div class="project-state-row">
+          <span class="live-state">
+            <i></i>
+            Live / Operational
+          </span>
+
+          <span class="mono">
+            SELF-HOSTED / FULL-STACK / INFRASTRUCTURE
+          </span>
+        </div>
+
+        <h1>
+          A self-hosted
+          <br />
+          command center
+          <br />
+          <span>for my work.</span>
+        </h1>
+
+        <p class="hero-description">
+          Central Hub is a centralized operations dashboard for tracking
+          projects, tasks, infrastructure, services, and integrations while
+          giving visitors a live, read-only view into what I am currently
+          building.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="primary-action"
+            href="https://dashboard.etterdigital.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Live Dashboard
+            <span>↗</span>
+          </a>
+
+          <a class="secondary-action" href="/#projects">
+            Back to Projects
+            <span>←</span>
+          </a>
+        </div>
+
+        <div class="hero-stack">
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>Prisma</span>
+          <span>PostgreSQL</span>
+          <span>Linux</span>
+          <span>PM2</span>
+          <span>Raspberry Pi</span>
+          <span>Cloudflare</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-topbar">
+          <div class="panel-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span class="mono">
+            dashboard.etterdigital.dev
+          </span>
+
+          <span class="panel-status mono">
+            <i></i>
+            ONLINE
+          </span>
+        </div>
+
+        <div class="dashboard-preview">
+          <aside class="preview-sidebar">
+            <div class="preview-logo">
+              ED
+            </div>
+
+            <span class="preview-nav active"></span>
+            <span class="preview-nav"></span>
+            <span class="preview-nav"></span>
+            <span class="preview-nav"></span>
+            <span class="preview-nav"></span>
+          </aside>
+
+          <div class="preview-main">
+            <div class="preview-heading">
+              <div>
+                <span class="mono">
+                  CENTRAL HUB
+                </span>
+
+                <h2>Dashboard</h2>
+              </div>
+
+              <span class="preview-health">
+                <i></i>
+                All systems operational
+              </span>
+            </div>
+
+            <div class="preview-stats">
+              <article>
+                <span class="mono">PROJECTS</span>
+                <strong>Live</strong>
+                <small>Publicly visible</small>
+              </article>
+
+              <article>
+                <span class="mono">TASKS</span>
+                <strong>Tracked</strong>
+                <small>Read-only publicly</small>
+              </article>
+
+              <article>
+                <span class="mono">SYSTEMS</span>
+                <strong>Monitored</strong>
+                <small>Infrastructure status</small>
+              </article>
+
+              <article>
+                <span class="mono">SERVICES</span>
+                <strong>Observed</strong>
+                <small>Operational state</small>
+              </article>
+            </div>
+
+            <div class="preview-system">
+              <span class="system-icon">
+                π
+              </span>
+
+              <div>
+                <strong>Raspberry Pi</strong>
+                <span>
+                  Primary host for Central Hub and supporting services.
+                </span>
+              </div>
+
+              <span class="system-online">
+                <i></i>
+                Online
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero-meta">
+      <span class="mono">
+        STATUS / OPERATIONAL
+      </span>
+
+      <span class="mono">
+        HOST / RASPBERRY PI
+      </span>
+
+      <span class="mono">
+        ACCESS / PUBLIC READ-ONLY
+      </span>
+
+      <span class="mono">
+        ADMIN / GITHUB AUTH
+      </span>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM -->
+
+  <section class="case-section problem-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          01 / The Problem
+        </p>
+
+        <h2>
+          Projects become harder to understand when everything lives
+          <span>in separate places.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          As I started building more applications, infrastructure, and
+          self-hosted services, a collection of repositories and notes was
+          no longer enough to represent what was actually running.
+        </p>
+
+        <p>
+          I wanted one place where I could see the state of my work,
+          understand what systems were online, track what I was building,
+          and give other people a useful view into that work without giving
+          them administrative access.
+        </p>
+      </div>
+    </div>
+
+    <div class="container problem-grid">
+      <article>
+        <span class="problem-index mono">01</span>
+
+        <h3>Projects</h3>
+
+        <p>
+          Track active work, project state, and what I am currently building.
+        </p>
+      </article>
+
+      <article>
+        <span class="problem-index mono">02</span>
+
+        <h3>Tasks</h3>
+
+        <p>
+          Keep development and infrastructure work visible in one workflow.
+        </p>
+      </article>
+
+      <article>
+        <span class="problem-index mono">03</span>
+
+        <h3>Systems</h3>
+
+        <p>
+          Monitor the machines and infrastructure supporting the platform.
+        </p>
+      </article>
+
+      <article>
+        <span class="problem-index mono">04</span>
+
+        <h3>Services</h3>
+
+        <p>
+          Surface operational state for applications and supporting services.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- LIVE SYSTEM -->
+
+  <section class="case-section live-system-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          02 / Live System
+        </p>
+
+        <h2>
+          This is not a mockup.
+          <br />
+          <span>It is running.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          Central Hub is deployed on my Raspberry Pi and published through a
+          Cloudflare tunnel at dashboard.etterdigital.dev.
+        </p>
+
+        <p>
+          Visitors can browse the same public-facing dashboard I use to
+          monitor my work. The public experience is intentionally read-only.
+        </p>
+      </div>
+    </div>
+
+    <div class="container live-card">
+      <div class="live-card-header">
+        <div>
+          <span class="mono">
+            LIVE DEPLOYMENT
+          </span>
+
+          <strong>
+            dashboard.etterdigital.dev
+          </strong>
+        </div>
+
+        <span class="live-state">
+          <i></i>
+          Operational
+        </span>
+      </div>
+
+      <div class="live-card-body">
+        <div class="live-copy">
+          <p>
+            The public dashboard exposes project, task, system, service, and
+            integration information intended for visitors while keeping write
+            access behind authentication.
+          </p>
+
+          <a
+            class="inline-link"
+            href="https://dashboard.etterdigital.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open the live dashboard
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="live-metrics">
+          <div>
+            <span class="mono">PUBLIC MODE</span>
+            <strong>Read-only</strong>
+          </div>
+
+          <div>
+            <span class="mono">ADMIN MODE</span>
+            <strong>GitHub authenticated</strong>
+          </div>
+
+          <div>
+            <span class="mono">HOSTING</span>
+            <strong>Self-hosted</strong>
+          </div>
+
+          <div>
+            <span class="mono">EDGE</span>
+            <strong>Cloudflare</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTUAL DASHBOARD SCREENSHOT -->
+
+    <div class="container screenshot-section">
+      <div class="screenshot-heading">
+        <div>
+          <span class="mono screenshot-label">
+            ACTUAL DEPLOYMENT / PUBLIC VIEW
+          </span>
+
+          <h3>
+            The live Central Hub dashboard.
+          </h3>
+        </div>
+
+        <p>
+          This is the public read-only interface currently running at
+          dashboard.etterdigital.dev. Visitors can monitor projects, tasks,
+          systems, services, and integrations without receiving edit access.
+        </p>
+      </div>
+
+      <figure class="dashboard-screenshot">
+        <div class="screenshot-window-bar">
+          <div class="screenshot-controls" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span class="mono">
+            dashboard.etterdigital.dev
+          </span>
+
+          <span class="screenshot-live mono">
+            <i></i>
+            LIVE
+          </span>
+        </div>
+
+        <img
+          src="/images/central-hub/dashboard-home.png"
+          alt="Central Hub public dashboard showing projects, tasks, systems, services, and Raspberry Pi status."
+          loading="lazy"
+        />
+
+        <figcaption class="mono">
+          CENTRAL HUB / DASHBOARD / PUBLIC VIEWER
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- APPLICATION VIEWS -->
+
+  <section class="case-section feature-gallery-section">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            03 / Application Views
+          </p>
+
+          <h2>
+            More than
+            <br />
+            <span>one dashboard.</span>
+          </h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            Central Hub includes dedicated views for projects, tasks, and
+            systems so different parts of my work can be tracked without
+            forcing everything into a single page.
+          </p>
+
+          <p>
+            Additional screenshots will be added here as the case study
+            continues to evolve.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-gallery">
+        <article class="feature-shot">
+          <div class="feature-shot-header">
+            <div>
+              <span class="mono">
+                VIEW / 01
+              </span>
+
+              <h3>
+                Projects
+              </h3>
+            </div>
+
+            <span class="feature-status mono">
+              SCREENSHOT PENDING
+            </span>
+          </div>
+
+          <div class="feature-placeholder">
+            <span class="placeholder-icon">
+              P
+            </span>
+
+            <strong>
+              Projects View
+            </strong>
+
+            <p>
+              Tracks active projects, project status, and development work.
+            </p>
+
+            <span class="placeholder-path mono">
+              /projects
+            </span>
+          </div>
+        </article>
+
+        <article class="feature-shot">
+          <div class="feature-shot-header">
+            <div>
+              <span class="mono">
+                VIEW / 02
+              </span>
+
+              <h3>
+                Tasks
+              </h3>
+            </div>
+
+            <span class="feature-status mono">
+              SCREENSHOT PENDING
+            </span>
+          </div>
+
+          <div class="feature-placeholder">
+            <span class="placeholder-icon">
+              T
+            </span>
+
+            <strong>
+              Tasks View
+            </strong>
+
+            <p>
+              Organizes work into actionable tasks and workflow states.
+            </p>
+
+            <span class="placeholder-path mono">
+              /tasks
+            </span>
+          </div>
+        </article>
+
+        <article class="feature-shot">
+          <div class="feature-shot-header">
+            <div>
+              <span class="mono">
+                VIEW / 03
+              </span>
+
+              <h3>
+                Systems
+              </h3>
+            </div>
+
+            <span class="feature-status mono">
+              SCREENSHOT PENDING
+            </span>
+          </div>
+
+          <div class="feature-placeholder">
+            <span class="placeholder-icon">
+              S
+            </span>
+
+            <strong>
+              Systems View
+            </strong>
+
+            <p>
+              Surfaces infrastructure information and monitored system status.
+            </p>
+
+            <span class="placeholder-path mono">
+              /systems
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+
+  <section class="case-section architecture-section">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            04 / Architecture
+          </p>
+
+          <h2>
+            From the internet
+            <br />
+            <span>to the Pi.</span>
+          </h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            The application combines a modern web stack with infrastructure
+            that I operate myself. Cloudflare provides the public entry
+            point, while the Raspberry Pi runs the application and supporting
+            services.
+          </p>
+        </div>
+      </div>
+
+      <div class="architecture-shell">
+        <div class="architecture-grid" aria-hidden="true"></div>
+
+        <div class="architecture-flow">
+          <article class="architecture-node">
+            <span class="node-number mono">01</span>
+
+            <span class="node-symbol">
+              ◎
+            </span>
+
+            <div>
+              <small class="mono">
+                PUBLIC NETWORK
+              </small>
+
+              <strong>
+                Internet
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-line">
+            <span></span>
+          </div>
+
+          <article class="architecture-node">
+            <span class="node-number mono">02</span>
+
+            <span class="node-symbol">
+              CF
+            </span>
+
+            <div>
+              <small class="mono">
+                DNS / TUNNEL / EDGE
+              </small>
+
+              <strong>
+                Cloudflare
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-line">
+            <span></span>
+          </div>
+
+          <article class="architecture-node host-node">
+            <span class="node-number mono">03</span>
+
+            <span class="node-symbol">
+              π
+            </span>
+
+            <div>
+              <small class="mono">
+                PRIMARY HOST
+              </small>
+
+              <strong>
+                Raspberry Pi / Linux
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-line">
+            <span></span>
+          </div>
+
+          <div class="application-layer">
+            <article>
+              <span class="mono">APPLICATION</span>
+              <strong>Next.js</strong>
+            </article>
+
+            <article>
+              <span class="mono">ORM</span>
+              <strong>Prisma</strong>
+            </article>
+
+            <article>
+              <span class="mono">DATABASE</span>
+              <strong>PostgreSQL</strong>
+            </article>
+
+            <article>
+              <span class="mono">PROCESS</span>
+              <strong>PM2</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS MODEL -->
+
+  <section class="case-section access-section">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            05 / Access Model
+          </p>
+
+          <h2>
+            Public visibility.
+            <br />
+            <span>Controlled modification.</span>
+          </h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            Central Hub is designed so visitors can inspect the dashboard
+            without being able to modify its data. Authentication changes the
+            capabilities of the interface rather than hiding the entire
+            application.
+          </p>
+        </div>
+      </div>
+
+      <div class="access-grid">
+        <article class="access-card">
+          <div class="access-card-heading">
+            <span class="access-icon">
+              ◉
+            </span>
+
+            <div>
+              <span class="mono">
+                PUBLIC VIEWER
+              </span>
+
+              <h3>
+                Read-only access
+              </h3>
+            </div>
+          </div>
+
+          <ul>
+            <li>View the main dashboard</li>
+            <li>Browse projects</li>
+            <li>Review task information</li>
+            <li>Monitor systems</li>
+            <li>See services and integrations</li>
+          </ul>
+        </article>
+
+        <article class="access-card admin-card">
+          <div class="access-card-heading">
+            <span class="access-icon">
+              GH
+            </span>
+
+            <div>
+              <span class="mono">
+                AUTHENTICATED ADMIN
+              </span>
+
+              <h3>
+                GitHub-controlled editing
+              </h3>
+            </div>
+          </div>
+
+          <ul>
+            <li>GitHub authentication</li>
+            <li>Edit controls become available</li>
+            <li>Modify dashboard data</li>
+            <li>Maintain project information</li>
+            <li>Administrative actions remain restricted</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGINEERING -->
+
+  <section class="case-section engineering-section">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            06 / Engineering
+          </p>
+
+          <h2>
+            More than
+            <br />
+            <span>the interface.</span>
+          </h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            Building Central Hub required working across application code,
+            databases, Linux deployment, process management, monitoring,
+            networking, authentication, and public access.
+          </p>
+        </div>
+      </div>
+
+      <div class="engineering-grid">
+        <article>
+          <span class="mono">
+            01 / APPLICATION
+          </span>
+
+          <h3>
+            Full-stack dashboard
+          </h3>
+
+          <p>
+            Built the user-facing application around projects, tasks,
+            systems, services, and integrations rather than treating each as
+            an isolated tool.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">
+            02 / DATA
+          </span>
+
+          <h3>
+            Persistent application state
+          </h3>
+
+          <p>
+            PostgreSQL and Prisma provide structured persistence for the
+            information displayed and maintained through the dashboard.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">
+            03 / OPERATIONS
+          </span>
+
+          <h3>
+            Linux deployment
+          </h3>
+
+          <p>
+            The application runs on a Raspberry Pi Linux host alongside
+            other self-hosted applications and services.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">
+            04 / NETWORKING
+          </span>
+
+          <h3>
+            Public access through Cloudflare
+          </h3>
+
+          <p>
+            The dashboard is exposed through a Cloudflare tunnel rather than
+            directly exposing the Raspberry Pi to the public internet.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">
+            05 / AUTH
+          </span>
+
+          <h3>
+            Role-dependent interface
+          </h3>
+
+          <p>
+            Public visitors receive a monitoring experience while
+            authenticated administration unlocks editing functionality.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">
+            06 / MONITORING
+          </span>
+
+          <h3>
+            Operational awareness
+          </h3>
+
+          <p>
+            Infrastructure and service state are presented directly inside
+            the same platform used to track development work.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS -->
+
+  <section class="case-section lessons-section">
+    <div class="container lessons-grid">
+      <div>
+        <p class="eyebrow">
+          07 / What It Taught Me
+        </p>
+
+        <h2>
+          Building software is only
+          <span>half the problem.</span>
+        </h2>
+      </div>
+
+      <div class="lesson-list">
+        <article>
+          <span class="mono">
+            01
+          </span>
+
+          <div>
+            <h3>
+              Deployment changes how you design.
+            </h3>
+
+            <p>
+              Running an application continuously forces you to think about
+              processes, failures, access, updates, and recovery instead of
+              only whether the code works locally.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="mono">
+            02
+          </span>
+
+          <div>
+            <h3>
+              Infrastructure and development overlap.
+            </h3>
+
+            <p>
+              Networking, Linux, databases, authentication, and application
+              development became parts of one system rather than separate
+              topics.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span class="mono">
+            03
+          </span>
+
+          <div>
+            <h3>
+              Public does not have to mean unrestricted.
+            </h3>
+
+            <p>
+              Separating read access from write access makes it possible to
+              publicly demonstrate the project without giving visitors
+              administrative control.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE -->
+
+  <section class="case-section future-section">
+    <div class="container future-grid">
+      <div>
+        <p class="eyebrow">
+          08 / Future Development
+        </p>
+
+        <h2>
+          The dashboard grows
+          <br />
+          <span>with the infrastructure.</span>
+        </h2>
+      </div>
+
+      <div class="future-copy">
+        <p>
+          Central Hub is an ongoing system rather than a finished demo. New
+          functionality can be added as new projects, monitoring needs, and
+          infrastructure are introduced.
+        </p>
+
+        <div class="future-tags">
+          <span>Additional monitoring</span>
+          <span>More integrations</span>
+          <span>Deeper system metrics</span>
+          <span>Expanded project tracking</span>
+          <span>Infrastructure automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+
+  <section class="case-cta">
+    <div class="container case-cta-inner">
+      <div>
+        <p class="eyebrow">
+          Live Project
+        </p>
+
+        <h2>
+          See Central Hub
+          <span>running now.</span>
+        </h2>
+      </div>
+
+      <a
+        class="primary-action"
+        href="https://dashboard.etterdigital.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Live Dashboard
+        <span>↗</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .case-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 7rem 0 3rem;
+  }
+
+  .hero-orb {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+  }
+
+  .hero-orb-one {
+    top: 4rem;
+    left: 20%;
+    width: 34rem;
+    height: 34rem;
+    background: rgba(103, 71, 255, 0.12);
+  }
+
+  .hero-orb-two {
+    right: -10rem;
+    top: 15rem;
+    width: 32rem;
+    height: 32rem;
+    background: rgba(52, 96, 255, 0.07);
+  }
+
+  .case-hero-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .project-state-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-state-row > .mono {
+    color: #625c74;
+    font-size: 0.52rem;
+  }
+
+  .live-state {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.65rem;
+    border: 1px solid rgba(62, 240, 143, 0.18);
+    border-radius: 999px;
+    color: #81c99e;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .live-state i,
+  .panel-status i,
+  .preview-health i,
+  .system-online i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--status-online);
+    box-shadow: 0 0 10px rgba(62, 240, 143, 0.5);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(4.6rem, 8vw, 8.3rem);
+    line-height: 0.85;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+  }
+
+  h1 span {
+    color: #7c6aa5;
+  }
+
+  .hero-description {
+    max-width: 680px;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .primary-action,
+  .secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 9px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      background 180ms ease;
+  }
+
+  .primary-action {
+    border: 1px solid rgba(124, 92, 255, 0.72);
+    background: rgba(124, 92, 255, 0.12);
+  }
+
+  .secondary-action {
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .primary-action:hover,
+  .secondary-action:hover {
+    transform: translateY(-2px);
+    color: white;
+    border-color: rgba(124, 92, 255, 0.7);
+  }
+
+  .hero-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 2.2rem;
+  }
+
+  .hero-stack span,
+  .future-tags span {
+    padding: 0.42rem 0.6rem;
+    border: 1px solid rgba(124, 92, 255, 0.18);
+    border-radius: 5px;
+    background: rgba(124, 92, 255, 0.025);
+    color: #8b829c;
+    font-family: var(--font-mono);
+    font-size: 0.56rem;
+    text-transform: uppercase;
+  }
+
+  .hero-panel {
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.25);
+    border-radius: 14px;
+    background: #080a0f;
+    box-shadow:
+      0 35px 100px rgba(0, 0, 0, 0.45),
+      0 0 70px rgba(100, 72, 255, 0.08);
+  }
+
+  .panel-topbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: #68707d;
+    font-size: 0.5rem;
+  }
+
+  .panel-dots {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .panel-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #363b45;
+  }
+
+  .panel-dots span:first-child {
+    background: #7656ff;
+  }
+
+  .panel-status {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #72b990;
+  }
+
+  .dashboard-preview {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    min-height: 500px;
+  }
+
+  .preview-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .preview-logo {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(124, 92, 255, 0.5);
+    border-radius: 7px;
+    color: #9d8bff;
+    font-size: 0.55rem;
+    font-weight: 800;
+  }
+
+  .preview-nav {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #353945;
+    border-radius: 4px;
+  }
+
+  .preview-nav.active {
+    border-color: #7455ff;
+    background: rgba(116, 85, 255, 0.15);
+  }
+
+  .preview-main {
+    padding: 1.5rem;
+  }
+
+  .preview-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .preview-heading > div > span {
+    color: #625d73;
+    font-size: 0.46rem;
+  }
+
+  .preview-heading h2 {
+    margin: 0.3rem 0 0;
+    font-size: 1.7rem;
+  }
+
+  .preview-health {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #80c49a;
+    font-size: 0.5rem;
+  }
+
+  .preview-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .preview-stats article {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+  }
+
+  .preview-stats span,
+  .preview-stats strong,
+  .preview-stats small {
+    display: block;
+  }
+
+  .preview-stats span {
+    color: #686171;
+    font-size: 0.46rem;
+  }
+
+  .preview-stats strong {
+    margin-top: 1rem;
+    font-size: 1.15rem;
+  }
+
+  .preview-stats small {
+    margin-top: 0.3rem;
+    color: #676f7c;
+    font-size: 0.55rem;
+  }
+
+  .preview-system {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+  }
+
+  .system-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(124, 92, 255, 0.28);
+    border-radius: 8px;
+    color: #9a88ff;
+  }
+
+  .preview-system strong,
+  .preview-system span {
+    display: block;
+  }
+
+  .preview-system > div > span {
+    margin-top: 0.3rem;
+    color: #727987;
+    font-size: 0.58rem;
+  }
+
+  .system-online {
+    display: flex !important;
+    align-items: center;
+    gap: 0.4rem;
+    color: #79c194;
+    font-size: 0.5rem;
+  }
+
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .hero-meta span {
+    color: #5e6571;
+    font-size: 0.5rem;
+  }
+
+  .case-section {
+    padding: 9rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.06);
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 6rem;
+    align-items: start;
+    margin-bottom: 5rem;
+  }
+
+  .section-grid h2,
+  .lessons-grid h2,
+  .future-grid h2,
+  .case-cta h2 {
+    margin: 1rem 0 0;
+    font-size: clamp(3.2rem, 6vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.065em;
+  }
+
+  .section-grid h2 span,
+  .lessons-grid h2 span,
+  .future-grid h2 span,
+  .case-cta h2 span {
+    color: #786b9b;
+  }
+
+  .section-copy p {
+    margin-top: 0;
+    color: var(--text-muted);
+    line-height: 1.9;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .problem-grid article,
+  .engineering-grid article {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .problem-index {
+    color: #615a6f;
+    font-size: 0.5rem;
+  }
+
+  .problem-grid h3,
+  .engineering-grid h3 {
+    margin: 2rem 0 0.8rem;
+  }
+
+  .problem-grid p,
+  .engineering-grid p {
+    margin: 0;
+    color: #777f8c;
+    font-size: 0.78rem;
+    line-height: 1.75;
+  }
+
+  .live-card {
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.18);
+    border-radius: 12px;
+    background: #080a0f;
+  }
+
+  .live-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .live-card-header span,
+  .live-card-header strong {
+    display: block;
+  }
+
+  .live-card-header > div > span {
+    color: #615a6f;
+    font-size: 0.5rem;
+  }
+
+  .live-card-header strong {
+    margin-top: 0.35rem;
+  }
+
+  .live-card-body {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .live-copy p {
+    color: var(--text-muted);
+    line-height: 1.9;
+  }
+
+  .inline-link {
+    display: inline-flex;
+    gap: 0.7rem;
+    color: #9c8cff;
+    font-weight: 700;
+  }
+
+  .live-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .live-metrics div {
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+  }
+
+  .live-metrics span,
+  .live-metrics strong {
+    display: block;
+  }
+
+  .live-metrics span {
+    color: #625b70;
+    font-size: 0.48rem;
+  }
+
+  .live-metrics strong {
+    margin-top: 0.6rem;
+  }
+
+  /* ACTUAL DASHBOARD SCREENSHOT */
+
+  .screenshot-section {
+    margin-top: 5rem;
+  }
+
+  .screenshot-heading {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 5rem;
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+
+  .screenshot-label {
+    color: #72668c;
+    font-size: 0.5rem;
+  }
+
+  .screenshot-heading h3 {
+    margin: 0.7rem 0 0;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+  }
+
+  .screenshot-heading > p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .dashboard-screenshot {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid rgba(124, 92, 255, 0.22);
+    border-radius: 14px;
+    background: #080a0f;
+    box-shadow:
+      0 30px 90px rgba(0, 0, 0, 0.45),
+      0 0 70px rgba(100, 72, 255, 0.06);
+  }
+
+  .screenshot-window-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--border);
+    color: #69717e;
+    font-size: 0.5rem;
+  }
+
+  .screenshot-controls {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .screenshot-controls span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #363b45;
+  }
+
+  .screenshot-controls span:first-child {
+    background: #7656ff;
+  }
+
+  .screenshot-live {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #78c296;
+  }
+
+  .screenshot-live i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--status-online);
+    box-shadow: 0 0 10px rgba(62, 240, 143, 0.5);
+  }
+
+  .dashboard-screenshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard-screenshot figcaption {
+    padding: 0.8rem 1rem;
+    border-top: 1px solid var(--border);
+    color: #59606c;
+    font-size: 0.46rem;
+  }
+
+  /* APPLICATION VIEWS */
+
+  .feature-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .feature-shot {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(8, 10, 15, 0.75);
+  }
+
+  .feature-shot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .feature-shot-header span {
+    color: #625c74;
+    font-size: 0.48rem;
+  }
+
+  .feature-shot-header h3 {
+    margin: 0.35rem 0 0;
+    font-size: 1.15rem;
+  }
+
+  .feature-status {
+    color: #827995 !important;
+    white-space: nowrap;
+  }
+
+  .feature-placeholder {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    background:
+      radial-gradient(
+        circle at 50% 40%,
+        rgba(124, 92, 255, 0.08),
+        transparent 12rem
+      );
+  }
+
+  .placeholder-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    border-radius: 10px;
+    color: #9c8aff;
+    font-family: var(--font-mono);
+    font-weight: 700;
+  }
+
+  .feature-placeholder strong {
+    font-size: 1.25rem;
+  }
+
+  .feature-placeholder p {
+    margin: 0.7rem 0 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+
+  .placeholder-path {
+    color: #625c74;
+    font-size: 0.5rem;
+  }
+
+  /* ARCHITECTURE */
+
+  .architecture-shell {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.16);
+    border-radius: 16px;
+    background: #080a10;
+  }
+
+  .architecture-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    background-image:
+      linear-gradient(
+        rgba(124, 92, 255, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(124, 92, 255, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 34px 34px;
+  }
+
+  .architecture-flow {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .architecture-node {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(7, 9, 15, 0.88);
+  }
+
+  .node-number {
+    color: #5e586b;
+    font-size: 0.48rem;
+  }
+
+  .node-symbol {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    border-radius: 9px;
+    color: #9d8bff;
+  }
+
+  .architecture-node small,
+  .architecture-node strong {
+    display: block;
+  }
+
+  .architecture-node small {
+    color: #696172;
+    font-size: 0.48rem;
+  }
+
+  .architecture-node strong {
+    margin-top: 0.3rem;
+  }
+
+  .architecture-line {
+    position: relative;
+    width: 1px;
+    height: 55px;
+    margin: 0 auto;
+    background: rgba(124, 92, 255, 0.4);
+  }
+
+  .architecture-line span {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 14px;
+    background: #8068ff;
+    box-shadow: 0 0 12px rgba(128, 104, 255, 0.7);
+    transform: translateX(-50%);
+    animation: architecture-flow 2.4s linear infinite;
+  }
+
+  @keyframes architecture-flow {
+    from {
+      top: 0;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    to {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
+  .application-layer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+  }
+
+  .application-layer article {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(7, 9, 15, 0.8);
+  }
+
+  .application-layer span,
+  .application-layer strong {
+    display: block;
+  }
+
+  .application-layer span {
+    color: #625c6d;
+    font-size: 0.45rem;
+  }
+
+  .application-layer strong {
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  /* ACCESS */
+
+  .access-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .access-card {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.01);
+  }
+
+  .admin-card {
+    border-color: rgba(124, 92, 255, 0.22);
+    background: rgba(124, 92, 255, 0.025);
+  }
+
+  .access-card-heading {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .access-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(124, 92, 255, 0.28);
+    border-radius: 8px;
+    color: #9b8aff;
+  }
+
+  .access-card-heading span,
+  .access-card-heading h3 {
+    margin: 0;
+  }
+
+  .access-card-heading .mono {
+    color: #665e73;
+    font-size: 0.48rem;
+  }
+
+  .access-card-heading h3 {
+    margin-top: 0.35rem;
+  }
+
+  .access-card ul {
+    margin: 2rem 0 0;
+    padding-left: 1.2rem;
+    color: #888f9b;
+    line-height: 2;
+  }
+
+  /* ENGINEERING */
+
+  .engineering-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .engineering-grid > article > .mono {
+    color: #685f78;
+    font-size: 0.48rem;
+  }
+
+  /* LESSONS / FUTURE */
+
+  .lessons-grid,
+  .future-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 7rem;
+  }
+
+  .lesson-list article {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+    padding: 1.7rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .lesson-list > article > span {
+    color: #615a6d;
+    font-size: 0.5rem;
+  }
+
+  .lesson-list h3 {
+    margin: 0;
+  }
+
+  .lesson-list p,
+  .future-copy > p {
+    color: var(--text-muted);
+    line-height: 1.85;
+  }
+
+  .future-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  /* CTA */
+
+  .case-cta {
+    padding: 8rem 0;
+    border-top: 1px solid rgba(124, 92, 255, 0.15);
+    background:
+      radial-gradient(
+        circle at 70% 50%,
+        rgba(100, 72, 255, 0.08),
+        transparent 30rem
+      );
+  }
+
+  .case-cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  /* RESPONSIVE */
+
+  @media (max-width: 1100px) {
+    .case-hero-grid,
+    .section-grid,
+    .lessons-grid,
+    .future-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .case-hero-grid {
+      gap: 4rem;
+    }
+
+    .engineering-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-meta {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .case-hero {
+      padding-top: 4rem;
+    }
+
+    h1 {
+      font-size: clamp(4rem, 18vw, 6rem);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .primary-action,
+    .secondary-action {
+      width: 100%;
+    }
+
+    .panel-topbar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .panel-topbar > span:nth-child(2) {
+      display: none;
+    }
+
+    .dashboard-preview {
+      grid-template-columns: 42px 1fr;
+    }
+
+    .preview-stats,
+    .problem-grid,
+    .live-card-body,
+    .live-metrics,
+    .application-layer,
+    .access-grid,
+    .engineering-grid,
+    .hero-meta {
+      grid-template-columns: 1fr;
+    }
+
+    .case-section {
+      padding: 6rem 0;
+    }
+
+    .architecture-flow {
+      padding: 2rem 1rem;
+    }
+
+    .case-cta-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .screenshot-heading {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .screenshot-window-bar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .screenshot-window-bar > span:nth-child(2) {
+      display: none;
+    }
+
+    .feature-shot-header {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .preview-health {
+      display: none;
+    }
+
+    .preview-system {
+      grid-template-columns: auto 1fr;
+    }
+
+    .system-online {
+      grid-column: 2;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .architecture-line span {
+      animation: none;
+    }
+  }
+</style>

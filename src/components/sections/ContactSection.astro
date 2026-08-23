@@ -1,0 +1,225 @@
+<section id="contact" class="contact-section">
+  <div class="contact-glow"></div>
+
+  <div class="container contact-layout">
+    <div class="contact-heading">
+      <p class="eyebrow">
+        05 / Contact
+      </p>
+
+      <h2>
+        Let's build
+        <br />
+        <span>something useful.</span>
+      </h2>
+
+      <p>
+        I'm building toward a career in IT, networking, infrastructure,
+        and systems administration. If my work aligns with an
+        opportunity, I'd be glad to connect.
+      </p>
+    </div>
+
+    <div class="contact-panel">
+      <div class="contact-panel-header">
+        <span class="mono">
+          CONTACT / ETTER DIGITAL
+        </span>
+
+        <span class="contact-available">
+          <i></i>
+          OPEN TO OPPORTUNITIES
+        </span>
+      </div>
+
+      <div class="contact-links">
+        <a
+          href="mailto:etter.thomasa@gmail.com"
+          class="contact-link"
+        >
+          <div>
+            <span class="contact-type mono">
+              EMAIL
+            </span>
+
+            <strong>
+              Send a message
+            </strong>
+          </div>
+
+          <span class="contact-arrow">
+            ↗
+          </span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/thomas-etter-666494232/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          <div>
+            <span class="contact-type mono">
+              LINKEDIN
+            </span>
+
+            <strong>
+              Professional profile
+            </strong>
+          </div>
+
+          <span class="contact-arrow">
+            ↗
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/slimhercules953"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          <div>
+            <span class="contact-type mono">
+              GITHUB
+            </span>
+
+            <strong>
+              Source & projects
+            </strong>
+          </div>
+
+          <span class="contact-arrow">
+            ↗
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-section {
+    position: relative;
+    overflow: hidden;
+    padding: 10rem 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-glow {
+    position: absolute;
+    right: -10rem;
+    top: 10%;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background: rgba(100, 72, 255, 0.08);
+    filter: blur(100px);
+  }
+
+  .contact-layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 7rem;
+    align-items: center;
+  }
+
+  .contact-heading h2 {
+    margin: 1rem 0 2rem;
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+  }
+
+  .contact-heading h2 span {
+    color: #796aa4;
+  }
+
+  .contact-heading > p:last-child {
+    max-width: 650px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .contact-panel {
+    border: 1px solid rgba(124, 92, 255, 0.2);
+    background: rgba(8, 10, 16, 0.8);
+  }
+
+  .contact-panel-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    color: #666d7a;
+    font-size: 0.48rem;
+  }
+
+  .contact-available {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #6fbd8c;
+  }
+
+  .contact-available i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--status-online);
+  }
+
+  .contact-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 180ms ease;
+  }
+
+  .contact-link:hover {
+    background: rgba(124, 92, 255, 0.04);
+  }
+
+  .contact-type {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #6f638a;
+    font-size: 0.48rem;
+  }
+
+  .contact-link strong {
+    font-size: 0.9rem;
+  }
+
+  .contact-arrow {
+    color: #8e7bff;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 1050px) {
+    .contact-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .contact-section {
+      padding: 7rem 0;
+    }
+
+    .contact-heading h2 {
+      font-size: clamp(3.5rem, 17vw, 5rem);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .contact-panel-header {
+      flex-direction: column;
+    }
+  }
+</style>

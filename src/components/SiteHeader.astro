@@ -1,0 +1,301 @@
+<header class="site-header">
+  <div class="container nav-container">
+    <a class="brand" href="/" aria-label="Etter Digital home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-e">E</span>
+        <span class="brand-d">D</span>
+      </span>
+
+      <span class="brand-name">ETTER DIGITAL</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#infrastructure">Infrastructure</a>
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+
+    <a
+      class="github-button"
+      href="https://github.com/slimhercules953"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+
+      <svg
+        viewBox="0 0 24 24"
+        width="16"
+        height="16"
+        aria-hidden="true"
+      >
+        <path
+          d="M7 17 17 7M8 7h9v9"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mobile-navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav
+    id="mobile-navigation"
+    class="mobile-nav"
+    aria-label="Mobile navigation"
+  >
+    <div class="container mobile-nav-inner">
+      <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#infrastructure">Infrastructure</a>
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#contact">Contact</a>
+
+      <a
+        class="mobile-github"
+        href="https://github.com/slimhercules953"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+    </div>
+  </nav>
+</header>
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+    background: rgba(5, 6, 10, 0.76);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .nav-container {
+    min-height: 76px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .brand {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 800;
+    font-size: 0.82rem;
+    letter-spacing: 0.055em;
+  }
+
+  .brand-mark {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .brand-e,
+  .brand-d {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid currentColor;
+  }
+
+  .brand-e {
+    top: 0;
+    left: 0;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .brand-d {
+    right: 0;
+    bottom: 0;
+    color: var(--accent);
+    border-radius: 4px;
+    background: rgba(124, 92, 255, 0.08);
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1.15rem, 2.1vw, 2.4rem);
+  }
+
+  .desktop-nav a {
+    position: relative;
+    padding: 1.8rem 0;
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    transition: color 180ms ease;
+  }
+
+  .desktop-nav a:hover,
+  .desktop-nav a.active {
+    color: white;
+  }
+
+  .desktop-nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    transform: translateX(-50%);
+  }
+
+  .github-button {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-width: 110px;
+    padding: 0.72rem 1rem;
+    border: 1px solid rgba(124, 92, 255, 0.65);
+    border-radius: 10px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(124, 92, 255, 0.035);
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .github-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(124, 92, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(67, 45, 180, 0.14);
+  }
+
+  .menu-button {
+    display: none;
+    justify-self: end;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.025);
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 18px;
+    height: 1px;
+    margin: 5px auto;
+    background: white;
+    transition: transform 180ms ease;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    .nav-container {
+      grid-template-columns: 1fr auto;
+    }
+
+    .desktop-nav,
+    .github-button {
+      display: none;
+    }
+
+    .menu-button {
+      display: block;
+    }
+
+    .mobile-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      background: rgba(5, 6, 10, 0.98);
+      transition:
+        max-height 250ms ease,
+        visibility 250ms ease;
+    }
+
+    .mobile-nav.open {
+      max-height: 520px;
+      visibility: visible;
+    }
+
+    .mobile-nav-inner {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0 1.5rem;
+    }
+
+    .mobile-nav a {
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .menu-button[aria-expanded="true"] span:first-child {
+      transform: translateY(3px) rotate(45deg);
+    }
+
+    .menu-button[aria-expanded="true"] span:last-child {
+      transform: translateY(-3px) rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nav-container {
+      min-height: 66px;
+    }
+
+    .brand-name {
+      font-size: 0.72rem;
+    }
+  }
+</style>
