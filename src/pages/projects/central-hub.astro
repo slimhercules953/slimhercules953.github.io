@@ -153,6 +153,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
               <div>
                 <strong>Raspberry Pi</strong>
+
                 <span>
                   Primary host for Central Hub and supporting services.
                 </span>
@@ -390,14 +391,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           </span>
         </div>
 
-        <img
-          src="/images/central-hub/dashboard-home.png"
-          alt="Central Hub public dashboard showing projects, tasks, systems, services, and Raspberry Pi status."
-          loading="lazy"
-        />
+        <a
+          class="screenshot-link"
+          href="/images/central-hub/dashboard-home.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open full-size Central Hub dashboard screenshot"
+        >
+          <img
+            src="/images/central-hub/dashboard-home.png"
+            alt="Central Hub public dashboard showing projects, tasks, systems, services, and Raspberry Pi status."
+            loading="lazy"
+          />
+        </a>
 
         <figcaption class="mono">
-          CENTRAL HUB / DASHBOARD / PUBLIC VIEWER
+          CENTRAL HUB / DASHBOARD / PUBLIC VIEWER — CLICK TO VIEW FULL SIZE
         </figcaption>
       </figure>
     </div>
@@ -428,13 +437,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           </p>
 
           <p>
-            Additional screenshots will be added here as the case study
-            continues to evolve.
+            Each view is part of the same public read-only experience. The
+            screenshots below show the application currently running through
+            dashboard.etterdigital.dev.
           </p>
         </div>
       </div>
 
       <div class="feature-gallery">
+        <!-- PROJECTS -->
+
         <article class="feature-shot">
           <div class="feature-shot-header">
             <div>
@@ -447,29 +459,45 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
               </h3>
             </div>
 
-            <span class="feature-status mono">
-              SCREENSHOT PENDING
+            <span class="feature-status live-feature mono">
+              <i></i>
+              LIVE VIEW
             </span>
           </div>
 
-          <div class="feature-placeholder">
-            <span class="placeholder-icon">
-              P
-            </span>
+          <a
+            class="feature-image-link"
+            href="/images/central-hub/projects.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open full-size Central Hub Projects screenshot"
+          >
+            <div class="feature-image-wrapper">
+              <img
+                src="/images/central-hub/projects.png"
+                alt="Central Hub Projects page showing tracked projects and their status."
+                loading="lazy"
+              />
 
-            <strong>
-              Projects View
-            </strong>
+              <span class="image-overlay mono">
+                VIEW FULL SIZE ↗
+              </span>
+            </div>
+          </a>
 
+          <div class="feature-shot-copy">
             <p>
-              Tracks active projects, project status, and development work.
+              Tracks active projects, their current status, and the work being
+              developed across Etter Digital.
             </p>
 
-            <span class="placeholder-path mono">
-              /projects
+            <span class="feature-path mono">
+              dashboard.etterdigital.dev/projects
             </span>
           </div>
         </article>
+
+        <!-- TASKS -->
 
         <article class="feature-shot">
           <div class="feature-shot-header">
@@ -483,29 +511,45 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
               </h3>
             </div>
 
-            <span class="feature-status mono">
-              SCREENSHOT PENDING
+            <span class="feature-status live-feature mono">
+              <i></i>
+              LIVE VIEW
             </span>
           </div>
 
-          <div class="feature-placeholder">
-            <span class="placeholder-icon">
-              T
-            </span>
+          <a
+            class="feature-image-link"
+            href="/images/central-hub/tasks.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open full-size Central Hub Tasks screenshot"
+          >
+            <div class="feature-image-wrapper">
+              <img
+                src="/images/central-hub/tasks.png"
+                alt="Central Hub Tasks page showing development and infrastructure work organized by workflow status."
+                loading="lazy"
+              />
 
-            <strong>
-              Tasks View
-            </strong>
+              <span class="image-overlay mono">
+                VIEW FULL SIZE ↗
+              </span>
+            </div>
+          </a>
 
+          <div class="feature-shot-copy">
             <p>
-              Organizes work into actionable tasks and workflow states.
+              Organizes development, infrastructure, maintenance, and future
+              work into a visible task workflow.
             </p>
 
-            <span class="placeholder-path mono">
-              /tasks
+            <span class="feature-path mono">
+              dashboard.etterdigital.dev/tasks
             </span>
           </div>
         </article>
+
+        <!-- SYSTEMS -->
 
         <article class="feature-shot">
           <div class="feature-shot-header">
@@ -519,30 +563,48 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
               </h3>
             </div>
 
-            <span class="feature-status mono">
-              SCREENSHOT PENDING
+            <span class="feature-status live-feature mono">
+              <i></i>
+              LIVE VIEW
             </span>
           </div>
 
-          <div class="feature-placeholder">
-            <span class="placeholder-icon">
-              S
-            </span>
+          <a
+            class="feature-image-link"
+            href="/images/central-hub/systems.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open full-size Central Hub Systems screenshot"
+          >
+            <div class="feature-image-wrapper">
+              <img
+                src="/images/central-hub/systems.png"
+                alt="Central Hub Systems page displaying infrastructure and monitored system information."
+                loading="lazy"
+              />
 
-            <strong>
-              Systems View
-            </strong>
+              <span class="image-overlay mono">
+                VIEW FULL SIZE ↗
+              </span>
+            </div>
+          </a>
 
+          <div class="feature-shot-copy">
             <p>
-              Surfaces infrastructure information and monitored system status.
+              Surfaces infrastructure information and monitored system status
+              so the operational side of the environment remains visible.
             </p>
 
-            <span class="placeholder-path mono">
-              /systems
+            <span class="feature-path mono">
+              dashboard.etterdigital.dev/systems
             </span>
           </div>
         </article>
       </div>
+
+      <p class="gallery-note mono">
+        SELECT ANY SCREENSHOT TO OPEN THE FULL-SIZE APPLICATION VIEW
+      </p>
     </div>
   </section>
 
@@ -566,8 +628,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         <div class="section-copy">
           <p>
             The application combines a modern web stack with infrastructure
-            that I operate myself. Cloudflare provides the public entry
-            point, while the Raspberry Pi runs the application and supporting
+            that I operate myself. Cloudflare provides the public entry point,
+            while the Raspberry Pi runs the application and supporting
             services.
           </p>
         </div>
@@ -1076,7 +1138,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   .live-state i,
   .panel-status i,
   .preview-health i,
-  .system-online i {
+  .system-online i,
+  .live-feature i {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -1504,7 +1567,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     margin-top: 0.6rem;
   }
 
-  /* ACTUAL DASHBOARD SCREENSHOT */
+  /* DASHBOARD SCREENSHOT */
 
   .screenshot-section {
     margin-top: 5rem;
@@ -1590,10 +1653,23 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     box-shadow: 0 0 10px rgba(62, 240, 143, 0.5);
   }
 
+  .screenshot-link {
+    display: block;
+    overflow: hidden;
+  }
+
   .dashboard-screenshot img {
     display: block;
     width: 100%;
     height: auto;
+    transition:
+      transform 300ms ease,
+      filter 300ms ease;
+  }
+
+  .screenshot-link:hover img {
+    transform: scale(1.01);
+    filter: brightness(1.05);
   }
 
   .dashboard-screenshot figcaption {
@@ -1607,15 +1683,26 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
   .feature-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
   }
 
   .feature-shot {
     overflow: hidden;
+    min-width: 0;
     border: 1px solid var(--border);
     border-radius: 12px;
     background: rgba(8, 10, 15, 0.75);
+    transition:
+      border-color 200ms ease,
+      transform 200ms ease,
+      box-shadow 200ms ease;
+  }
+
+  .feature-shot:hover {
+    transform: translateY(-3px);
+    border-color: rgba(124, 92, 255, 0.32);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
   }
 
   .feature-shot-header {
@@ -1627,7 +1714,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     border-bottom: 1px solid var(--border);
   }
 
-  .feature-shot-header span {
+  .feature-shot-header > div > span {
     color: #625c74;
     font-size: 0.48rem;
   }
@@ -1638,52 +1725,92 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   }
 
   .feature-status {
-    color: #827995 !important;
     white-space: nowrap;
+    font-size: 0.46rem;
   }
 
-  .feature-placeholder {
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2rem;
-    background:
-      radial-gradient(
-        circle at 50% 40%,
-        rgba(124, 92, 255, 0.08),
-        transparent 12rem
-      );
+  .live-feature {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #78c296;
   }
 
-  .placeholder-icon {
-    display: grid;
-    place-items: center;
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(124, 92, 255, 0.3);
-    border-radius: 10px;
-    color: #9c8aff;
-    font-family: var(--font-mono);
-    font-weight: 700;
+  .feature-image-link {
+    display: block;
   }
 
-  .feature-placeholder strong {
-    font-size: 1.25rem;
+  .feature-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: #07090e;
   }
 
-  .feature-placeholder p {
-    margin: 0.7rem 0 1.5rem;
+  .feature-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    transition:
+      transform 350ms ease,
+      filter 350ms ease;
+  }
+
+  .feature-image-link:hover img {
+    transform: scale(1.025);
+    filter: brightness(0.78);
+  }
+
+  .image-overlay {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid rgba(124, 92, 255, 0.4);
+    border-radius: 6px;
+    background: rgba(5, 6, 10, 0.88);
+    color: #a494ff;
+    font-size: 0.46rem;
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity 200ms ease,
+      transform 200ms ease;
+  }
+
+  .feature-image-link:hover .image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .feature-shot-copy {
+    padding: 1.2rem;
+  }
+
+  .feature-shot-copy p {
+    min-height: 4.1rem;
+    margin: 0 0 1.2rem;
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     line-height: 1.7;
   }
 
-  .placeholder-path {
+  .feature-path {
+    display: block;
+    overflow: hidden;
     color: #625c74;
-    font-size: 0.5rem;
+    font-size: 0.46rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .gallery-note {
+    margin: 1.2rem 0 0;
+    color: #565d69;
+    font-size: 0.46rem;
+    text-align: right;
   }
 
   /* ARCHITECTURE */
@@ -1980,6 +2107,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     .feature-gallery {
       grid-template-columns: 1fr;
     }
+
+    .feature-image-wrapper {
+      aspect-ratio: 16 / 8;
+    }
+
+    .feature-shot-copy p {
+      min-height: 0;
+    }
   }
 
   @media (max-width: 760px) {
@@ -2052,6 +2187,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     .feature-shot-header {
       flex-direction: column;
     }
+
+    .feature-image-wrapper {
+      aspect-ratio: 16 / 10;
+    }
+
+    .image-overlay {
+      display: none;
+    }
+
+    .gallery-note {
+      text-align: left;
+    }
   }
 
   @media (max-width: 520px) {
@@ -2066,11 +2213,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     .system-online {
       grid-column: 2;
     }
+
+    .feature-image-wrapper {
+      aspect-ratio: 4 / 3;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .architecture-line span {
       animation: none;
+    }
+
+    .feature-shot,
+    .feature-image-wrapper img,
+    .dashboard-screenshot img,
+    .image-overlay {
+      transition: none;
     }
   }
 </style>
