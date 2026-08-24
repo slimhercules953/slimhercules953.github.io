@@ -1,3 +1,10 @@
+---
+const pathname = Astro.url.pathname;
+
+const isHome = pathname === "/";
+const isProject = pathname.startsWith("/projects/");
+---
+
 <header class="site-header">
   <div class="container nav-container">
     <a class="brand" href="/" aria-label="Etter Digital home">
@@ -10,12 +17,29 @@
     </a>
 
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a class="active" href="/">Home</a>
-      <a href="/#projects">Projects</a>
-      <a href="/#infrastructure">Infrastructure</a>
-      <a href="/#about">About</a>
-      <a href="/#experience">Experience</a>
-      <a href="/#contact">Contact</a>
+      <a class:active={isHome} href="/">
+        Home
+      </a>
+
+      <a class:active={isProject} href="/#projects">
+        Projects
+      </a>
+
+      <a href="/#infrastructure">
+        Infrastructure
+      </a>
+
+      <a href="/#about">
+        About
+      </a>
+
+      <a href="/#experience">
+        Experience
+      </a>
+
+      <a href="/#contact">
+        Contact
+      </a>
     </nav>
 
     <a
@@ -61,12 +85,29 @@
     aria-label="Mobile navigation"
   >
     <div class="container mobile-nav-inner">
-      <a href="/">Home</a>
-      <a href="/#projects">Projects</a>
-      <a href="/#infrastructure">Infrastructure</a>
-      <a href="/#about">About</a>
-      <a href="/#experience">Experience</a>
-      <a href="/#contact">Contact</a>
+      <a class:active={isHome} href="/">
+        Home
+      </a>
+
+      <a class:active={isProject} href="/#projects">
+        Projects
+      </a>
+
+      <a href="/#infrastructure">
+        Infrastructure
+      </a>
+
+      <a href="/#about">
+        About
+      </a>
+
+      <a href="/#experience">
+        Experience
+      </a>
+
+      <a href="/#contact">
+        Contact
+      </a>
 
       <a
         class="mobile-github"
@@ -79,6 +120,7 @@
     </div>
   </nav>
 </header>
+
 <style>
   .site-header {
     position: sticky;
@@ -231,6 +273,10 @@
 
   .mobile-nav {
     display: none;
+  }
+
+  .mobile-nav a.active {
+    color: white;
   }
 
   @media (max-width: 1050px) {
