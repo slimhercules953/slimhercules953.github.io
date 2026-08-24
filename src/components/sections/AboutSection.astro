@@ -35,7 +35,7 @@
         </span>
 
         <blockquote>
-          I don't want to simply say I know a technology.
+          I don't want to simply say I know a technology.{" "}
           <span>
             I want the project beside it to prove why.
           </span>
@@ -328,6 +328,14 @@
   }
 
   .skill-item {
+    display: grid;
+    grid-template-rows:
+      32px
+      72px
+      28px
+      1fr
+      auto;
+    min-height: 345px;
     padding: 1.5rem;
     border: 1px solid var(--border);
   }
@@ -335,6 +343,8 @@
   .skill-top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    min-height: 32px;
   }
 
   .skill-code {
@@ -347,16 +357,25 @@
   }
 
   .skill-item h4 {
-    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 72px;
     font-size: 1.45rem;
   }
 
   .skill-used {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 28px;
     color: #7567a0;
     font-size: 0.5rem;
   }
 
   .skill-item ul {
+    align-self: start;
+    margin: 0;
     padding-left: 1rem;
     color: #9ba1ad;
     font-size: 0.76rem;
@@ -364,8 +383,10 @@
   }
 
   .skill-related {
+    align-self: end;
     margin-top: 1.5rem;
     padding-top: 1rem;
+    min-height: 38px;
     border-top: 1px solid var(--border);
     color: #625c74;
     font-family: var(--font-mono);

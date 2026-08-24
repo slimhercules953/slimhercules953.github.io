@@ -1,0 +1,1724 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Aesthetic King | Etter Digital"
+  description="Aesthetic King is a public Discord application with 29 slash commands, Cloudflare-backed assets, and always-on Raspberry Pi deployment."
+>
+  <!-- HERO -->
+
+  <section class="case-hero">
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
+
+    <div class="container case-hero-grid">
+      <div class="case-hero-copy">
+        <p class="eyebrow">
+          Project Case Study / Aesthetic King
+        </p>
+
+        <div class="project-state-row">
+          <span class="live-state">
+            <i></i>
+            Live / Operational
+          </span>
+
+          <span class="mono">
+            DISCORD / NODE.JS / CLOUDFLARE / SELF-HOSTED
+          </span>
+        </div>
+
+        <h1>
+          A personal bot
+          <br />
+          that became
+          <br />
+          <span>a real service.</span>
+        </h1>
+
+        <p class="hero-description">
+          Aesthetic King started as a personal Discord project and grew into
+          a public application with 29 slash commands, Cloudflare-backed
+          assets, and an always-on production deployment running on my
+          Raspberry Pi.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="primary-action"
+            href="https://github.com/slimhercules953/aesthetic-king"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Source
+            <span>↗</span>
+          </a>
+
+          <a class="secondary-action" href="/#projects">
+            Back to Projects
+            <span>←</span>
+          </a>
+        </div>
+
+        <div class="hero-stack">
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Discord.js</span>
+          <span>Cloudflare</span>
+          <span>PM2</span>
+          <span>Linux</span>
+          <span>Raspberry Pi</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-window">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <span class="mono">
+              AESTHETIC KING / DISCORD
+            </span>
+
+            <span class="window-status mono">
+              <i></i>
+              ONLINE
+            </span>
+          </div>
+
+          <a
+            class="hero-image-link"
+            href="/images/aesthetic-king/bot-profile.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open full-size Aesthetic King bot profile screenshot"
+          >
+            <img
+              src="/images/aesthetic-king/bot-profile.png"
+              alt="Aesthetic King Discord bot profile."
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero-meta">
+      <span class="mono">
+        COMMANDS / 29
+      </span>
+
+      <span class="mono">
+        HOST / RASPBERRY PI
+      </span>
+
+      <span class="mono">
+        PROCESS / PM2
+      </span>
+
+      <span class="mono">
+        STORAGE / CLOUDFLARE
+      </span>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          01 / Overview
+        </p>
+
+        <h2>
+          Built for myself.
+          <br />
+          <span>Good enough to publish.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          Aesthetic King began as a personal experiment with Discord bot
+          development. As the project grew, the command system became useful
+          and polished enough that I decided to make the bot publicly
+          available.
+        </p>
+
+        <p>
+          The project now runs as an always-on Discord application with 29
+          slash commands. Its most heavily used features are the Theme and
+          Profile commands, which are focused on visual customization and
+          presentation.
+        </p>
+
+        <p>
+          A dedicated support server exists for the project, although the bot
+          itself remains the primary way users interact with Aesthetic King.
+        </p>
+      </div>
+    </div>
+
+    <div class="container overview-grid">
+      <article>
+        <span class="mono">01</span>
+        <strong>29 Slash Commands</strong>
+        <p>
+          A command-based interface covering visual, utility, and
+          member-facing functionality.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">02</span>
+        <strong>Public Project</strong>
+        <p>
+          The bot moved beyond personal use and was released as a public
+          application.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">03</span>
+        <strong>Always-On</strong>
+        <p>
+          Runs continuously on Linux and automatically returns after host
+          reboots.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">04</span>
+        <strong>Cloudflare Assets</strong>
+        <p>
+          Remote assets are served from a Cloudflare bucket and accessed by
+          the bot at runtime.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP COMMANDS -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          02 / Flagship Commands
+        </p>
+
+        <h2>
+          Theme and Profile
+          <br />
+          <span>define the experience.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          The Theme and Profile commands are the largest and most frequently
+          used parts of Aesthetic King. They represent the strongest
+          user-facing side of the project and the point where Discord
+          command handling, asset delivery, and presentation come together.
+        </p>
+      </div>
+    </div>
+
+    <div class="container command-showcase">
+      <article class="command-card">
+        <div class="command-card-header">
+          <div>
+            <span class="mono">
+              FLAGSHIP / 01
+            </span>
+
+            <h3>
+              Theme
+            </h3>
+          </div>
+
+          <span class="command-status mono">
+            CORE COMMAND
+          </span>
+        </div>
+
+        <a
+          class="command-image"
+          href="/images/aesthetic-king/theme.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open full-size Theme command screenshot"
+        >
+          <img
+            src="/images/aesthetic-king/theme.png"
+            alt="Aesthetic King Theme command running in Discord."
+            loading="lazy"
+          />
+
+          <span class="image-overlay mono">
+            VIEW FULL SIZE ↗
+          </span>
+        </a>
+
+        <div class="command-copy">
+          <p>
+            Theme is one of the project's primary visual commands and is a
+            major part of how users interact with Aesthetic King.
+          </p>
+        </div>
+      </article>
+
+      <article class="command-card">
+        <div class="command-card-header">
+          <div>
+            <span class="mono">
+              FLAGSHIP / 02
+            </span>
+
+            <h3>
+              Profile
+            </h3>
+          </div>
+
+          <span class="command-status mono">
+            CORE COMMAND
+          </span>
+        </div>
+
+        <a
+          class="command-image"
+          href="/images/aesthetic-king/profile.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open full-size Profile command screenshot"
+        >
+          <img
+            src="/images/aesthetic-king/profile.png"
+            alt="Aesthetic King Profile command running in Discord."
+            loading="lazy"
+          />
+
+          <span class="image-overlay mono">
+            VIEW FULL SIZE ↗
+          </span>
+        </a>
+
+        <div class="command-copy">
+          <p>
+            Profile provides another major user-facing experience and helped
+            push the bot beyond a collection of simple utility commands.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMMAND SYSTEM -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          03 / Command System
+        </p>
+
+        <h2>
+          Twenty-nine
+          <br />
+          <span>slash commands.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          Aesthetic King uses Discord slash commands as its primary
+          interface. The command set grew over time as the project expanded
+          from a personal experiment into a more complete application.
+        </p>
+      </div>
+    </div>
+
+    <div class="container command-list-layout">
+      <figure class="command-list-shot">
+        <div class="window-bar">
+          <div class="window-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span class="mono">
+            DISCORD / COMMANDS
+          </span>
+
+          <span class="window-status mono">
+            29 AVAILABLE
+          </span>
+        </div>
+
+        <a
+          href="/images/aesthetic-king/commands.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/aesthetic-king/commands.png"
+            alt="Aesthetic King Discord slash-command list."
+            loading="lazy"
+          />
+        </a>
+
+        <figcaption class="mono">
+          AESTHETIC KING / SLASH COMMAND INTERFACE
+        </figcaption>
+      </figure>
+
+      <div class="command-system-notes">
+        <article>
+          <span class="mono">INTERFACE</span>
+          <strong>Slash-command driven</strong>
+          <p>
+            Commands are exposed directly through Discord's application
+            command interface rather than requiring users to memorize text
+            prefixes.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">SCOPE</span>
+          <strong>29 commands</strong>
+          <p>
+            The project has grown well beyond a single-purpose bot and now
+            contains a substantial command surface.
+          </p>
+        </article>
+
+        <article>
+          <span class="mono">FOCUS</span>
+          <strong>Visual customization</strong>
+          <p>
+            Theme and Profile remain the most prominent commands and best
+            represent the bot's identity.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+
+  <section class="case-section architecture-section">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            04 / Architecture
+          </p>
+
+          <h2>
+            Discord to Linux
+            <br />
+            <span>through Cloudflare.</span>
+          </h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            The bot itself runs on my Raspberry Pi, while some of the assets
+            used by commands are stored externally in Cloudflare. This keeps
+            the application process and the public asset layer separate.
+          </p>
+        </div>
+      </div>
+
+      <div class="architecture-shell">
+        <div class="architecture-grid" aria-hidden="true"></div>
+
+        <div class="architecture-flow">
+          <article class="architecture-node">
+            <span class="node-number mono">01</span>
+            <span class="node-symbol">D</span>
+
+            <div>
+              <small class="mono">
+                USER INTERFACE
+              </small>
+
+              <strong>
+                Discord
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-line">
+            <span></span>
+          </div>
+
+          <article class="architecture-node">
+            <span class="node-number mono">02</span>
+            <span class="node-symbol">AK</span>
+
+            <div>
+              <small class="mono">
+                APPLICATION
+              </small>
+
+              <strong>
+                Aesthetic King
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-line">
+            <span></span>
+          </div>
+
+          <article class="architecture-node">
+            <span class="node-number mono">03</span>
+            <span class="node-symbol">π</span>
+
+            <div>
+              <small class="mono">
+                PRODUCTION HOST
+              </small>
+
+              <strong>
+                Raspberry Pi / Linux
+              </strong>
+            </div>
+          </article>
+
+          <div class="architecture-branch"></div>
+
+          <div class="architecture-bottom">
+            <article>
+              <span class="mono">
+                PROCESS
+              </span>
+
+              <strong>
+                PM2
+              </strong>
+            </article>
+
+            <article>
+              <span class="mono">
+                REMOTE ASSETS
+              </span>
+
+              <strong>
+                Cloudflare Bucket
+              </strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUDFLARE -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          05 / Cloudflare Integration
+        </p>
+
+        <h2>
+          Assets live
+          <br />
+          <span>outside the bot.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          Aesthetic King does not use a traditional database. Instead,
+          external asset URLs are referenced by the application and the
+          Cloudflare bucket is accessed as part of command execution.
+        </p>
+
+        <p>
+          Cloudflare was also one of the more difficult parts of the project
+          during the early development phase. Working through that integration
+          became one of the most valuable technical parts of building the bot.
+        </p>
+      </div>
+    </div>
+
+    <div class="container integration-grid">
+      <article>
+        <span class="mono">
+          APPLICATION CODE
+        </span>
+
+        <h3>
+          Command logic
+        </h3>
+
+        <p>
+          Slash-command behavior and application logic remain inside the
+          Node.js bot.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">
+          CLOUDFLARE
+        </span>
+
+        <h3>
+          Remote assets
+        </h3>
+
+        <p>
+          Hosted assets can be called remotely rather than requiring every
+          resource to live directly inside the running application.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">
+          PERSISTENCE
+        </span>
+
+        <h3>
+          Stateless design
+        </h3>
+
+        <p>
+          The bot does not maintain user profiles or application state in a
+          database.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- DEPLOYMENT -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          06 / Deployment
+        </p>
+
+        <h2>
+          Built to
+          <br />
+          <span>stay online.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          The production bot runs continuously on my Raspberry Pi. PM2 manages
+          the Node.js process and the environment is configured so Aesthetic
+          King automatically returns after the Raspberry Pi restarts.
+        </p>
+      </div>
+    </div>
+
+    <div class="container deployment-shell">
+      <div class="deployment-top">
+        <span class="mono">
+          PRODUCTION PROCESS
+        </span>
+
+        <span class="deployment-online mono">
+          <i></i>
+          ONLINE
+        </span>
+      </div>
+
+      <div class="deployment-terminal mono">
+        <p>
+          <span>01</span>
+          raspberrypi$ pm2 start aesthetic-king
+        </p>
+
+        <p>
+          <span>02</span>
+          process registered
+        </p>
+
+        <p>
+          <span>03</span>
+          discord client connected
+        </p>
+
+        <p>
+          <span>04</span>
+          startup persistence enabled
+        </p>
+
+        <p>
+          <span>05</span>
+          <strong>
+            waiting for commands_
+          </strong>
+        </p>
+      </div>
+
+      <div class="deployment-meta">
+        <div>
+          <span class="mono">HOST</span>
+          <strong>Raspberry Pi</strong>
+        </div>
+
+        <div>
+          <span class="mono">OS</span>
+          <strong>Linux</strong>
+        </div>
+
+        <div>
+          <span class="mono">PROCESS</span>
+          <strong>PM2</strong>
+        </div>
+
+        <div>
+          <span class="mono">RESTART</span>
+          <strong>Automatic</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHALLENGES -->
+
+  <section class="case-section">
+    <div class="container section-grid">
+      <div>
+        <p class="eyebrow">
+          07 / Challenges
+        </p>
+
+        <h2>
+          The beginning
+          <br />
+          <span>was the hardest part.</span>
+        </h2>
+      </div>
+
+      <div class="section-copy">
+        <p>
+          Early development was significantly harder than maintaining the bot
+          today. The difficult parts were not limited to Discord commands;
+          learning how the application, hosting environment, external assets,
+          and Cloudflare integration fit together required a lot of iteration.
+        </p>
+      </div>
+    </div>
+
+    <div class="container challenge-grid">
+      <article>
+        <span class="mono">
+          01 / APPLICATION
+        </span>
+
+        <h3>
+          Learning Discord development
+        </h3>
+
+        <p>
+          Building the first command structure and understanding Discord's
+          application model required substantial experimentation.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">
+          02 / INFRASTRUCTURE
+        </span>
+
+        <h3>
+          Cloudflare integration
+        </h3>
+
+        <p>
+          Connecting remote assets and learning how Cloudflare fit into the
+          application architecture was one of the most difficult early
+          challenges.
+        </p>
+      </article>
+
+      <article>
+        <span class="mono">
+          03 / OPERATIONS
+        </span>
+
+        <h3>
+          Moving into production
+        </h3>
+
+        <p>
+          Turning a local personal project into an always-on application
+          introduced Linux hosting and process management responsibilities.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- REDESIGN -->
+
+  <section class="case-section redesign-section">
+    <div class="container redesign-grid">
+      <div>
+        <p class="eyebrow">
+          08 / What I Would Redesign
+        </p>
+
+        <h2>
+          Less data
+          <br />
+          <span>inside the application.</span>
+        </h2>
+      </div>
+
+      <div class="redesign-copy">
+        <p>
+          If I rebuilt Aesthetic King today, one of the largest architectural
+          changes would be moving color-related command data out of the bot
+          itself.
+        </p>
+
+        <p>
+          Rather than embedding that information directly into the
+          application, I would move it into externally hosted storage or an
+          API. That would make updates easier and reduce the need to change
+          application code whenever the underlying content changes.
+        </p>
+
+        <div class="redesign-comparison">
+          <article>
+            <span class="mono">
+              CURRENT
+            </span>
+
+            <strong>
+              Content embedded in bot
+            </strong>
+
+            <p>
+              Changes to some color-related content require modifying the
+              application itself.
+            </p>
+          </article>
+
+          <span class="comparison-arrow">
+            →
+          </span>
+
+          <article class="future-architecture">
+            <span class="mono">
+              FUTURE
+            </span>
+
+            <strong>
+              API / remote content
+            </strong>
+
+            <p>
+              Application logic remains stable while content can evolve
+              independently.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE -->
+
+  <section class="case-section">
+    <div class="container future-grid">
+      <div>
+        <p class="eyebrow">
+          09 / Future Version
+        </p>
+
+        <h2>
+          Rebuild what worked.
+          <br />
+          <span>Improve what didn't.</span>
+        </h2>
+      </div>
+
+      <div class="future-copy">
+        <p>
+          A future Aesthetic King rewrite would preserve the parts of the bot
+          that users already rely on while improving how commands, assets, and
+          external data are structured.
+        </p>
+
+        <div class="future-tags">
+          <span>External command data</span>
+          <span>API-backed content</span>
+          <span>Cleaner architecture</span>
+          <span>Improved maintainability</span>
+          <span>Expanded commands</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+
+  <section class="case-cta">
+    <div class="container case-cta-inner">
+      <div>
+        <p class="eyebrow">
+          Public Project
+        </p>
+
+        <h2>
+          Explore Aesthetic King {" "}
+          <span>on GitHub.</span>
+        </h2>
+      </div>
+
+      <a
+        class="primary-action"
+        href="https://github.com/slimhercules953/aesthetic-king"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Repository
+        <span>↗</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .case-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 7rem 0 3rem;
+  }
+
+  .hero-orb {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+  }
+
+  .hero-orb-one {
+    top: 4rem;
+    left: 12%;
+    width: 34rem;
+    height: 34rem;
+    background: rgba(103, 71, 255, 0.12);
+  }
+
+  .hero-orb-two {
+    right: -10rem;
+    top: 15rem;
+    width: 32rem;
+    height: 32rem;
+    background: rgba(195, 75, 255, 0.06);
+  }
+
+  .case-hero-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .project-state-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-state-row > .mono {
+    color: #625c74;
+    font-size: 0.52rem;
+  }
+
+  .live-state {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.65rem;
+    border: 1px solid rgba(62, 240, 143, 0.18);
+    border-radius: 999px;
+    color: #81c99e;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .live-state i,
+  .window-status i,
+  .deployment-online i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--status-online);
+    box-shadow: 0 0 10px rgba(62, 240, 143, 0.5);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(4.4rem, 7.6vw, 8rem);
+    line-height: 0.86;
+    letter-spacing: -0.075em;
+    text-transform: uppercase;
+  }
+
+  h1 span {
+    color: #806da6;
+  }
+
+  .hero-description {
+    max-width: 680px;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .primary-action,
+  .secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 9px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      background 180ms ease;
+  }
+
+  .primary-action {
+    border: 1px solid rgba(124, 92, 255, 0.72);
+    background: rgba(124, 92, 255, 0.12);
+  }
+
+  .secondary-action {
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .primary-action:hover,
+  .secondary-action:hover {
+    transform: translateY(-2px);
+    color: white;
+    border-color: rgba(124, 92, 255, 0.7);
+  }
+
+  .hero-stack,
+  .future-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .hero-stack {
+    margin-top: 2.2rem;
+  }
+
+  .hero-stack span,
+  .future-tags span {
+    padding: 0.42rem 0.6rem;
+    border: 1px solid rgba(124, 92, 255, 0.18);
+    border-radius: 5px;
+    background: rgba(124, 92, 255, 0.025);
+    color: #8b829c;
+    font-family: var(--font-mono);
+    font-size: 0.56rem;
+    text-transform: uppercase;
+  }
+
+  .hero-window,
+  .command-list-shot,
+  .deployment-shell {
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.22);
+    border-radius: 14px;
+    background: #080a0f;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+  }
+
+  .window-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--border);
+    color: #69717e;
+    font-size: 0.5rem;
+  }
+
+  .window-dots {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .window-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #363b45;
+  }
+
+  .window-dots span:first-child {
+    background: #7656ff;
+  }
+
+  .window-status {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #78c296;
+  }
+
+  .hero-image-link {
+    display: block;
+  }
+
+  .hero-image-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .hero-meta span {
+    color: #5e6571;
+    font-size: 0.5rem;
+  }
+
+  .case-section {
+    padding: 9rem 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.06);
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 6rem;
+    align-items: start;
+    margin-bottom: 5rem;
+  }
+
+  .section-grid h2,
+  .redesign-grid h2,
+  .future-grid h2,
+  .case-cta h2 {
+    margin: 1rem 0 0;
+    font-size: clamp(3.2rem, 6vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.065em;
+  }
+
+  .section-grid h2 span,
+  .redesign-grid h2 span,
+  .future-grid h2 span,
+  .case-cta h2 span {
+    color: #786b9b;
+  }
+
+  .section-copy p,
+  .redesign-copy > p,
+  .future-copy > p {
+    color: var(--text-muted);
+    line-height: 1.9;
+  }
+
+  .overview-grid,
+  .integration-grid,
+  .challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .integration-grid,
+  .challenge-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .overview-grid article,
+  .integration-grid article,
+  .challenge-grid article {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .overview-grid span,
+  .integration-grid > article > span,
+  .challenge-grid > article > span {
+    color: #615a6f;
+    font-size: 0.5rem;
+  }
+
+  .overview-grid strong {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .overview-grid p,
+  .integration-grid p,
+  .challenge-grid p {
+    color: #777f8c;
+    font-size: 0.78rem;
+    line-height: 1.75;
+  }
+
+  .integration-grid h3,
+  .challenge-grid h3 {
+    margin: 1.5rem 0 0.8rem;
+  }
+
+  .command-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .command-card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(8, 10, 15, 0.7);
+  }
+
+  .command-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .command-card-header span {
+    color: #625c74;
+    font-size: 0.48rem;
+  }
+
+  .command-card-header h3 {
+    margin: 0.35rem 0 0;
+    font-size: 1.3rem;
+  }
+
+  .command-status {
+    white-space: nowrap;
+  }
+
+  .command-image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: #07090e;
+  }
+
+  .command-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    transition: transform 300ms ease, filter 300ms ease;
+  }
+
+  .command-image:hover img {
+    transform: scale(1.02);
+    filter: brightness(0.8);
+  }
+
+  .image-overlay {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid rgba(124, 92, 255, 0.35);
+    border-radius: 6px;
+    background: rgba(5, 6, 10, 0.88);
+    color: #9c8cff;
+    font-size: 0.46rem;
+    opacity: 0;
+    transition: opacity 180ms ease;
+  }
+
+  .command-image:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .command-copy {
+    padding: 1.2rem;
+  }
+
+  .command-copy p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    line-height: 1.75;
+  }
+
+  .command-list-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1rem;
+  }
+
+  .command-list-shot {
+    margin: 0;
+  }
+
+  .command-list-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .command-list-shot figcaption {
+    padding: 0.8rem 1rem;
+    border-top: 1px solid var(--border);
+    color: #59606c;
+    font-size: 0.46rem;
+  }
+
+  .command-system-notes {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .command-system-notes article {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .command-system-notes span,
+  .command-system-notes strong {
+    display: block;
+  }
+
+  .command-system-notes span {
+    color: #625c74;
+    font-size: 0.48rem;
+  }
+
+  .command-system-notes strong {
+    margin-top: 0.8rem;
+  }
+
+  .command-system-notes p {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.75;
+  }
+
+  .architecture-shell {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.16);
+    border-radius: 16px;
+    background: #080a10;
+  }
+
+  .architecture-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    background-image:
+      linear-gradient(rgba(124, 92, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124, 92, 255, 0.08) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .architecture-flow {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .architecture-node {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(7, 9, 15, 0.88);
+  }
+
+  .node-number {
+    color: #5e586b;
+    font-size: 0.48rem;
+  }
+
+  .node-symbol {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    border-radius: 9px;
+    color: #9d8bff;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .architecture-node small,
+  .architecture-node strong {
+    display: block;
+  }
+
+  .architecture-node small {
+    color: #696172;
+    font-size: 0.48rem;
+  }
+
+  .architecture-node strong {
+    margin-top: 0.3rem;
+  }
+
+  .architecture-line {
+    position: relative;
+    width: 1px;
+    height: 55px;
+    margin: 0 auto;
+    background: rgba(124, 92, 255, 0.4);
+  }
+
+  .architecture-line span {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 14px;
+    background: #8068ff;
+    box-shadow: 0 0 12px rgba(128, 104, 255, 0.7);
+    transform: translateX(-50%);
+    animation: architecture-flow 2.4s linear infinite;
+  }
+
+  @keyframes architecture-flow {
+    from {
+      top: 0;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    to {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
+  .architecture-branch {
+    width: 1px;
+    height: 55px;
+    margin: 0 auto;
+    background: rgba(124, 92, 255, 0.35);
+  }
+
+  .architecture-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+  }
+
+  .architecture-bottom article {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(7, 9, 15, 0.82);
+  }
+
+  .architecture-bottom span,
+  .architecture-bottom strong {
+    display: block;
+  }
+
+  .architecture-bottom span {
+    color: #625c6d;
+    font-size: 0.45rem;
+  }
+
+  .architecture-bottom strong {
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .deployment-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    color: #625c74;
+    font-size: 0.5rem;
+  }
+
+  .deployment-online {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #78c296;
+  }
+
+  .deployment-terminal {
+    padding: 1.5rem;
+    font-size: 0.65rem;
+  }
+
+  .deployment-terminal p {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+  }
+
+  .deployment-terminal p > span {
+    color: #454b57;
+  }
+
+  .deployment-terminal strong {
+    color: #9b8cff;
+  }
+
+  .deployment-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--border);
+  }
+
+  .deployment-meta div {
+    padding: 1rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .deployment-meta div:last-child {
+    border-right: 0;
+  }
+
+  .deployment-meta span,
+  .deployment-meta strong {
+    display: block;
+  }
+
+  .deployment-meta span {
+    color: #625c74;
+    font-size: 0.46rem;
+  }
+
+  .deployment-meta strong {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .redesign-grid,
+  .future-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 7rem;
+  }
+
+  .redesign-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .redesign-comparison article {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .future-architecture {
+    border-color: rgba(124, 92, 255, 0.25) !important;
+    background: rgba(124, 92, 255, 0.025);
+  }
+
+  .redesign-comparison span,
+  .redesign-comparison strong {
+    display: block;
+  }
+
+  .redesign-comparison article > span {
+    color: #625c74;
+    font-size: 0.48rem;
+  }
+
+  .redesign-comparison strong {
+    margin-top: 0.8rem;
+  }
+
+  .redesign-comparison p {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .comparison-arrow {
+    color: #77649d;
+    font-size: 1.3rem;
+  }
+
+  .future-tags {
+    margin-top: 2rem;
+  }
+
+  .case-cta {
+    padding: 8rem 0;
+    border-top: 1px solid rgba(124, 92, 255, 0.15);
+    background:
+      radial-gradient(
+        circle at 70% 50%,
+        rgba(100, 72, 255, 0.08),
+        transparent 30rem
+      );
+  }
+
+  .case-cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  @media (max-width: 1100px) {
+    .case-hero-grid,
+    .section-grid,
+    .command-list-layout,
+    .redesign-grid,
+    .future-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .overview-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-meta,
+    .deployment-meta {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .case-hero {
+      padding-top: 4rem;
+    }
+
+    h1 {
+      font-size: clamp(4rem, 18vw, 6rem);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .primary-action,
+    .secondary-action {
+      width: 100%;
+    }
+
+    .window-bar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .window-bar > span:nth-child(2) {
+      display: none;
+    }
+
+    .command-showcase,
+    .overview-grid,
+    .integration-grid,
+    .challenge-grid,
+    .architecture-bottom,
+    .hero-meta,
+    .deployment-meta {
+      grid-template-columns: 1fr;
+    }
+
+    .case-section {
+      padding: 6rem 0;
+    }
+
+    .deployment-meta div {
+      border-right: 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .deployment-meta div:last-child {
+      border-bottom: 0;
+    }
+
+    .redesign-comparison {
+      grid-template-columns: 1fr;
+    }
+
+    .comparison-arrow {
+      transform: rotate(90deg);
+    }
+
+    .case-cta-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .image-overlay {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .architecture-line span {
+      animation: none;
+    }
+
+    .command-image img,
+    .primary-action,
+    .secondary-action {
+      transition: none;
+    }
+  }
+</style>

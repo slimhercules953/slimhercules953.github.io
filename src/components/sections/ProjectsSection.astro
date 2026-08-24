@@ -1,10 +1,13 @@
 <section id="projects" class="projects-section">
-  <div class="projects-orb"></div>
+  <div class="projects-orb projects-orb-left"></div>
+  <div class="projects-orb projects-orb-right"></div>
 
   <div class="container">
     <header class="section-heading">
       <div>
-        <p class="eyebrow section-eyebrow">01 / Selected Work</p>
+        <p class="eyebrow section-eyebrow">
+          01 / Selected Work
+        </p>
 
         <h2>
           Systems I've
@@ -15,40 +18,46 @@
 
       <p class="section-intro">
         Projects are presented as engineering work rather than a list of
-        technologies — what they solve, how they work, and the decisions
-        behind them.
+        technologies — what they solve, how they work, how they are deployed,
+        and what I learned by operating them.
       </p>
     </header>
 
+    <!-- CENTRAL HUB -->
+
     <article class="featured-project">
-      <div class="project-index mono">01 / FLAGSHIP SYSTEM</div>
+      <div class="project-index mono">
+        01 / FLAGSHIP SYSTEM
+      </div>
 
       <div class="featured-project-grid">
         <div class="project-copy">
           <div class="project-status-row">
             <span class="project-status operational">
               <span></span>
-              Operational
+              Live / Operational
             </span>
 
             <span class="project-type mono">
-              FULL-STACK / INFRASTRUCTURE
+              FULL-STACK / INFRASTRUCTURE / SELF-HOSTED
             </span>
           </div>
 
-          <h3>Central Hub</h3>
+          <h3>
+            Central Hub
+          </h3>
 
           <p class="project-tagline">
-            A private operations platform for managing projects, systems,
-            services, and the infrastructure behind Etter Digital.
+            A self-hosted operations dashboard for tracking projects, tasks,
+            infrastructure, systems, services, and integrations.
           </p>
 
           <p class="project-description">
-            Central Hub started as a personal dashboard and evolved into
-            an always-on management system running on my Raspberry Pi. It
-            combines project management, system monitoring, task workflows,
-            database-backed application state, and infrastructure integrations
-            in one private environment.
+            Central Hub started as a personal dashboard and evolved into an
+            always-on platform running on my Raspberry Pi. It combines
+            project management, task workflows, system monitoring,
+            database-backed application state, GitHub-authenticated editing,
+            and public read-only visibility in one environment.
           </p>
 
           <dl class="project-metadata">
@@ -63,13 +72,13 @@
             </div>
 
             <div>
-              <dt>Access</dt>
-              <dd>Private / Authenticated</dd>
+              <dt>Public Access</dt>
+              <dd>Read-only dashboard</dd>
             </div>
 
             <div>
-              <dt>Purpose</dt>
-              <dd>Personal operations platform</dd>
+              <dt>Admin Access</dt>
+              <dd>GitHub authenticated</dd>
             </div>
           </dl>
 
@@ -80,156 +89,118 @@
             <span>Prisma</span>
             <span>PM2</span>
             <span>Linux</span>
+            <span>Cloudflare</span>
           </div>
 
           <div class="project-actions">
-            <a class="project-link" href="/projects/central-hub">
+            <a
+              class="project-button project-button-primary"
+              href="/projects/central-hub"
+            >
               Explore Case Study
               <span>→</span>
             </a>
 
-            <span class="private-note mono">
-              DASHBOARD ACCESS RESTRICTED
-            </span>
+            <a
+              class="project-button project-button-secondary"
+              href="https://dashboard.etterdigital.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Dashboard
+              <span>↗</span>
+            </a>
           </div>
         </div>
 
         <div class="project-visual">
           <div class="project-visual-glow"></div>
 
-          <div class="central-preview">
-            <div class="preview-topbar">
-              <div>
-                <span></span>
-                <span></span>
-                <span></span>
+          <a
+            class="central-image-link"
+            href="/projects/central-hub"
+            aria-label="Open the Central Hub case study"
+          >
+            <div class="central-image-shell">
+              <div class="preview-topbar">
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <p class="mono">
+                  dashboard.etterdigital.dev
+                </p>
+
+                <span class="preview-live mono">
+                  <i></i>
+                  LIVE
+                </span>
               </div>
 
-              <p class="mono">CENTRAL HUB / OVERVIEW</p>
-            </div>
+              <div class="central-image-wrapper">
+                <img
+                  src="/images/central-hub/dashboard-home.png"
+                  alt="Central Hub live dashboard showing project, task, system, and service information."
+                  loading="lazy"
+                />
 
-            <div class="preview-body">
-              <aside class="preview-sidebar">
-                <span class="preview-logo">ED</span>
-                <span class="nav-shape active"></span>
-                <span class="nav-shape"></span>
-                <span class="nav-shape"></span>
-                <span class="nav-shape"></span>
-                <span class="nav-shape"></span>
-              </aside>
-
-              <div class="preview-content">
-                <div class="preview-heading">
-                  <div>
-                    <small class="mono">OPERATIONS</small>
-                    <strong>Dashboard</strong>
-                  </div>
-
-                  <span class="mini-online">
-                    <i></i>
-                    ONLINE
+                <div class="central-image-overlay">
+                  <span class="mono">
+                    LIVE APPLICATION / CENTRAL HUB
                   </span>
-                </div>
 
-                <div class="preview-stat-row">
-                  <div>
-                    <span class="visual-square purple"></span>
-                    <p>Projects</p>
-                  </div>
-
-                  <div>
-                    <span class="visual-square blue"></span>
-                    <p>Systems</p>
-                  </div>
-
-                  <div>
-                    <span class="visual-square green"></span>
-                    <p>Tasks</p>
-                  </div>
-                </div>
-
-                <div class="preview-panels">
-                  <div class="large-preview-panel">
-                    <div class="fake-table-heading">
-                      <span>Systems</span>
-                      <span>Status</span>
-                    </div>
-
-                    <div class="fake-table-row">
-                      <span>
-                        <i class="purple"></i>
-                        Raspberry Pi
-                      </span>
-
-                      <b>Online</b>
-                    </div>
-
-                    <div class="fake-table-row">
-                      <span>
-                        <i class="blue"></i>
-                        Central Hub
-                      </span>
-
-                      <b>Online</b>
-                    </div>
-
-                    <div class="fake-table-row">
-                      <span>
-                        <i class="green"></i>
-                        PostgreSQL
-                      </span>
-
-                      <b>Active</b>
-                    </div>
-                  </div>
-
-                  <div class="small-preview-panel">
-                    <small class="mono">SERVICES</small>
-
-                    <div class="service-ring">
-                      <div></div>
-                    </div>
-
-                    <span>Managed</span>
-                  </div>
+                  <strong>
+                    Explore the system
+                    <span>↗</span>
+                  </strong>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
           <div class="visual-label visual-label-one mono">
-            PRIVATE / AUTH
+            PUBLIC / READ-ONLY
           </div>
 
           <div class="visual-label visual-label-two mono">
-            SELF-HOSTED
+            SELF-HOSTED / PI
           </div>
         </div>
       </div>
     </article>
 
-    <article class="secondary-project">
-      <div class="secondary-index mono">02</div>
+    <!-- SECONDARY PROJECT GRID -->
 
-      <div class="secondary-content">
-        <div class="secondary-main">
-          <div class="project-status-row">
-            <span class="project-status operational">
-              <span></span>
-              Operational
-            </span>
+    <div class="project-grid">
+      <!-- AESTHETIC KING -->
 
-            <span class="project-type mono">
-              AUTOMATION / DISCORD
-            </span>
+      <article class="project-card">
+        <div class="project-card-header">
+          <span class="secondary-index mono">
+            02 / APPLICATION
+          </span>
+
+          <span class="project-status operational">
+            <span></span>
+            Operational
+          </span>
+        </div>
+
+        <div class="project-card-main">
+          <div class="project-type mono">
+            AUTOMATION / DISCORD / NODE.JS
           </div>
 
-          <h3>Aesthetic King</h3>
+          <h3>
+            Aesthetic King
+          </h3>
 
-          <p>
-            A Node.js Discord application built around automation, custom
-            commands, member-facing tools, and persistent deployment on
-            my Raspberry Pi.
+          <p class="project-card-description">
+            A persistent Discord application built around automation, custom
+            commands, member-facing functionality, and always-on deployment
+            on my Raspberry Pi.
           </p>
 
           <div class="project-stack">
@@ -237,13 +208,19 @@
             <span>Node.js</span>
             <span>Discord.js</span>
             <span>PM2</span>
+            <span>Linux</span>
           </div>
         </div>
 
-        <div class="secondary-terminal">
+        <div class="terminal-window">
           <div class="terminal-heading">
-            <span class="mono">PROCESS / AESTHETIC-KING</span>
-            <span class="terminal-online">● ONLINE</span>
+            <span class="mono">
+              PROCESS / AESTHETIC-KING
+            </span>
+
+            <span class="terminal-online">
+              ● ONLINE
+            </span>
           </div>
 
           <div class="terminal-lines mono">
@@ -264,33 +241,294 @@
 
             <p>
               <span>04</span>
-              <strong>waiting for commands_</strong>
+              <strong>
+                waiting for commands_
+              </strong>
             </p>
           </div>
         </div>
 
-        <a
-          class="secondary-arrow"
-          href="https://github.com/slimhercules953/aesthetic-king"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View Aesthetic King on GitHub"
-        >
-          ↗
-        </a>
-      </div>
-    </article>
+        <div class="project-card-footer">
+          <div class="project-card-links">
+            <a
+              class="card-text-link"
+              href="/projects/aesthetic-king"
+            >
+              Explore Case Study
+              <span>→</span>
+            </a>
+
+            <a
+              class="card-text-link muted-link"
+              href="https://github.com/slimhercules953/aesthetic-king"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+              <span>↗</span>
+            </a>
+          </div>
+
+          <span class="mono">
+            ALWAYS-ON SERVICE
+          </span>
+        </div>
+      </article>
+
+      <!-- ETTER DIGITAL -->
+
+      <article class="project-card">
+        <div class="project-card-header">
+          <span class="secondary-index mono">
+            03 / WEB PLATFORM
+          </span>
+
+          <span class="project-status operational">
+            <span></span>
+            Live
+          </span>
+        </div>
+
+        <div class="project-card-main">
+          <div class="project-type mono">
+            PORTFOLIO / FRONTEND / CI-CD
+          </div>
+
+          <h3>
+            Etter Digital
+          </h3>
+
+          <p class="project-card-description">
+            The portfolio you are viewing now — designed as a technical
+            platform for documenting projects, infrastructure, architecture,
+            and engineering work rather than a traditional static resume site.
+          </p>
+
+          <div class="project-stack">
+            <span>Astro</span>
+            <span>GitHub</span>
+            <span>GitHub Actions</span>
+            <span>GitHub Pages</span>
+            <span>Cloudflare DNS</span>
+          </div>
+        </div>
+
+        <div class="pipeline-window">
+          <div class="pipeline-heading">
+            <span class="mono">
+              DEPLOYMENT PIPELINE
+            </span>
+
+            <span class="pipeline-state mono">
+              ACTIVE
+            </span>
+          </div>
+
+          <div class="pipeline-flow">
+            <div class="pipeline-step">
+              <span class="pipeline-icon mono">
+                01
+              </span>
+
+              <div>
+                <strong>
+                  Code
+                </strong>
+
+                <span>
+                  Local development
+                </span>
+              </div>
+            </div>
+
+            <span class="pipeline-arrow">
+              →
+            </span>
+
+            <div class="pipeline-step">
+              <span class="pipeline-icon mono">
+                02
+              </span>
+
+              <div>
+                <strong>
+                  GitHub
+                </strong>
+
+                <span>
+                  Source control
+                </span>
+              </div>
+            </div>
+
+            <span class="pipeline-arrow">
+              →
+            </span>
+
+            <div class="pipeline-step">
+              <span class="pipeline-icon mono">
+                03
+              </span>
+
+              <div>
+                <strong>
+                  Actions
+                </strong>
+
+                <span>
+                  Automated deploy
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card-footer">
+          <span class="mono">
+            CONTINUOUSLY DEPLOYED
+          </span>
+
+          <a
+            class="card-arrow"
+            href="https://github.com/slimhercules953/slimhercules953.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Etter Digital source code on GitHub"
+          >
+            ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- HOMELAB -->
+
+      <article class="project-card infrastructure-card">
+        <div class="project-card-header">
+          <span class="secondary-index mono">
+            04 / INFRASTRUCTURE
+          </span>
+
+          <span class="project-status active">
+            <span></span>
+            Active
+          </span>
+        </div>
+
+        <div class="project-card-main">
+          <div class="project-type mono">
+            LINUX / SELF-HOSTING / OPERATIONS
+          </div>
+
+          <h3>
+            Homelab Infrastructure
+          </h3>
+
+          <p class="project-card-description">
+            The Linux and Raspberry Pi environment behind my self-hosted
+            applications, databases, monitoring services, Cloudflare tunnels,
+            process management, and remote operations.
+          </p>
+
+          <div class="project-stack">
+            <span>Raspberry Pi</span>
+            <span>Linux</span>
+            <span>Cloudflare</span>
+            <span>PM2</span>
+            <span>PostgreSQL</span>
+            <span>SSH</span>
+          </div>
+        </div>
+
+        <div class="homelab-visual">
+          <div class="homelab-node edge-node">
+            <span class="mono">
+              EDGE
+            </span>
+
+            <strong>
+              Cloudflare
+            </strong>
+          </div>
+
+          <div class="homelab-line">
+            <span></span>
+          </div>
+
+          <div class="homelab-node host-node">
+            <span class="mono">
+              HOST
+            </span>
+
+            <strong>
+              Raspberry Pi
+            </strong>
+
+            <small>
+              Linux / ARM64
+            </small>
+          </div>
+
+          <div class="homelab-services">
+            <span>
+              Central Hub
+            </span>
+
+            <span>
+              PostgreSQL
+            </span>
+
+            <span>
+              Aesthetic King
+            </span>
+
+            <span>
+              Monitoring
+            </span>
+          </div>
+        </div>
+
+        <div class="project-card-footer">
+          <div class="project-card-links">
+            <a
+              class="card-text-link"
+              href="/projects/homelab"
+            >
+              Explore Case Study
+              <span>→</span>
+            </a>
+
+            <a
+              class="card-text-link muted-link"
+              href="/#infrastructure"
+            >
+              Infrastructure
+              <span>→</span>
+            </a>
+          </div>
+
+          <span class="mono">
+            EVOLVING ENVIRONMENT
+          </span>
+        </div>
+      </article>
+    </div>
+
+    <!-- NEXT PROJECT -->
 
     <div class="project-next">
-      <span class="mono">03 / NEXT SYSTEM</span>
+      <span class="mono">
+        05 / NEXT PROJECT
+      </span>
 
       <p>
-        The portfolio will grow alongside the infrastructure.
+        Networking-focused engineering project.
       </p>
 
       <span class="project-next-line"></span>
 
-      <span class="mono">IN DEVELOPMENT</span>
+      <span class="mono">
+        PLANNED
+      </span>
     </div>
   </div>
 </section>
@@ -305,15 +543,26 @@
 
   .projects-orb {
     position: absolute;
-    top: 15%;
-    left: -18rem;
     z-index: -1;
-    width: 38rem;
-    height: 38rem;
     border-radius: 50%;
-    background: rgba(74, 53, 190, 0.08);
     filter: blur(100px);
     pointer-events: none;
+  }
+
+  .projects-orb-left {
+    top: 12%;
+    left: -18rem;
+    width: 38rem;
+    height: 38rem;
+    background: rgba(74, 53, 190, 0.08);
+  }
+
+  .projects-orb-right {
+    right: -16rem;
+    bottom: 14%;
+    width: 34rem;
+    height: 34rem;
+    background: rgba(61, 92, 210, 0.05);
   }
 
   .section-heading {
@@ -342,9 +591,11 @@
     line-height: 1.8;
   }
 
+  /* FEATURED PROJECT */
+
   .featured-project {
-    border-top: 1px solid var(--border);
     padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
   }
 
   .project-index,
@@ -355,8 +606,8 @@
 
   .featured-project-grid {
     display: grid;
-    grid-template-columns: 0.78fr 1.22fr;
-    gap: 7rem;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 6rem;
     align-items: center;
     margin-top: 2rem;
   }
@@ -389,13 +640,22 @@
     box-shadow: 0 0 8px rgba(62, 240, 143, 0.45);
   }
 
+  .project-status.active {
+    border-color: rgba(124, 92, 255, 0.22);
+    color: #a093d0;
+  }
+
+  .project-status.active span {
+    background: #8f75ff;
+    box-shadow: 0 0 8px rgba(143, 117, 255, 0.5);
+  }
+
   .project-type {
     color: #625c74;
     font-size: 0.56rem;
   }
 
-  .project-copy h3,
-  .secondary-main h3 {
+  .project-copy h3 {
     margin: 1.6rem 0 1rem;
     font-size: clamp(3.5rem, 6vw, 6rem);
     line-height: 0.9;
@@ -448,35 +708,64 @@
     background: rgba(124, 92, 255, 0.025);
     color: #978da9;
     font-family: var(--font-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.055em;
+    font-size: 0.58rem;
+    letter-spacing: 0.045em;
     text-transform: uppercase;
   }
 
   .project-actions {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 1.5rem;
+    gap: 0.8rem;
     margin-top: 2rem;
   }
 
-  .project-link {
+  .project-button {
     display: inline-flex;
-    gap: 0.7rem;
     align-items: center;
-    border-bottom: 1px solid rgba(124, 92, 255, 0.6);
-    padding-bottom: 0.35rem;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
     font-weight: 700;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      background 180ms ease;
   }
 
-  .private-note {
-    color: #625c74;
-    font-size: 0.5rem;
+  .project-button:hover {
+    transform: translateY(-2px);
   }
+
+  .project-button-primary {
+    border: 1px solid rgba(124, 92, 255, 0.6);
+    background: rgba(124, 92, 255, 0.1);
+  }
+
+  .project-button-primary:hover {
+    border-color: #8e77ff;
+    background: rgba(124, 92, 255, 0.16);
+  }
+
+  .project-button-secondary {
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .project-button-secondary:hover {
+    border-color: rgba(124, 92, 255, 0.45);
+    color: white;
+  }
+
+  /* CENTRAL HUB IMAGE */
 
   .project-visual {
     position: relative;
+    min-width: 0;
   }
 
   .project-visual-glow {
@@ -487,19 +776,35 @@
     filter: blur(75px);
   }
 
-  .central-preview {
+  .central-image-link {
+    display: block;
+  }
+
+  .central-image-shell {
     overflow: hidden;
     border: 1px solid rgba(139, 112, 255, 0.25);
     border-radius: 14px;
     background: #090b11;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    transition:
+      transform 220ms ease,
+      border-color 220ms ease,
+      box-shadow 220ms ease;
+  }
+
+  .central-image-link:hover .central-image-shell {
+    transform: translateY(-4px);
+    border-color: rgba(139, 112, 255, 0.42);
+    box-shadow:
+      0 38px 90px rgba(0, 0, 0, 0.42),
+      0 0 60px rgba(101, 74, 255, 0.08);
   }
 
   .preview-topbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 1rem;
+    padding: 0.9rem 1rem;
     border-bottom: 1px solid var(--border);
   }
 
@@ -525,206 +830,76 @@
     font-size: 0.48rem;
   }
 
-  .preview-body {
-    display: grid;
-    grid-template-columns: 58px 1fr;
-    min-height: 430px;
-  }
-
-  .preview-sidebar {
+  .preview-live {
+    justify-self: end;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding-top: 1rem;
-    border-right: 1px solid var(--border);
-  }
-
-  .preview-logo {
-    display: grid;
-    place-items: center;
-    width: 28px;
-    height: 28px;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(124, 92, 255, 0.5);
-    border-radius: 6px;
-    color: #9b89ff;
-    font-size: 0.55rem;
-    font-weight: 800;
-  }
-
-  .nav-shape {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #323640;
-    border-radius: 4px;
-  }
-
-  .nav-shape.active {
-    border-color: #7656ff;
-    background: rgba(118, 86, 255, 0.16);
-  }
-
-  .preview-content {
-    padding: 1.5rem;
-  }
-
-  .preview-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .preview-heading small,
-  .preview-heading strong {
-    display: block;
-  }
-
-  .preview-heading small {
-    color: #625c74;
+    gap: 0.4rem;
+    color: #72bd90;
     font-size: 0.46rem;
   }
 
-  .preview-heading strong {
-    margin-top: 0.3rem;
-    font-size: 1.4rem;
-  }
-
-  .mini-online {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    color: #74b68f;
-    font-family: var(--font-mono);
-    font-size: 0.45rem;
-  }
-
-  .mini-online i {
+  .preview-live i {
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background: var(--status-online);
+    box-shadow: 0 0 8px rgba(62, 240, 143, 0.4);
   }
 
-  .preview-stat-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.7rem;
-    margin-top: 1.5rem;
+  .central-image-wrapper {
+    position: relative;
+    overflow: hidden;
   }
 
-  .preview-stat-row > div {
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-  }
-
-  .preview-stat-row p {
-    margin: 0.8rem 0 0;
-    color: #8d93a0;
-    font-size: 0.65rem;
-  }
-
-  .visual-square {
+  .central-image-wrapper img {
     display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    transition:
+      transform 350ms ease,
+      filter 350ms ease;
   }
 
-  .visual-square.purple {
-    background: rgba(124, 92, 255, 0.28);
-  }
-
-  .visual-square.blue {
-    background: rgba(79, 124, 255, 0.26);
-  }
-
-  .visual-square.green {
-    background: rgba(62, 240, 143, 0.16);
-  }
-
-  .preview-panels {
-    display: grid;
-    grid-template-columns: 1.5fr 0.7fr;
-    gap: 0.7rem;
-    margin-top: 0.7rem;
-  }
-
-  .large-preview-panel,
-  .small-preview-panel {
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-  }
-
-  .fake-table-heading,
-  .fake-table-row {
+  .central-image-overlay {
+    position: absolute;
+    inset: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.6rem 0;
-    font-size: 0.55rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background:
+      linear-gradient(
+        to top,
+        rgba(5, 6, 10, 0.92),
+        rgba(5, 6, 10, 0.1) 55%,
+        transparent
+      );
+    opacity: 0;
+    transition: opacity 220ms ease;
   }
 
-  .fake-table-heading {
-    color: #636b79;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--border);
+  .central-image-overlay > span {
+    color: #8c819f;
+    font-size: 0.48rem;
   }
 
-  .fake-table-row {
-    color: #999fab;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.06);
-  }
-
-  .fake-table-row:last-child {
-    border-bottom: 0;
-  }
-
-  .fake-table-row > span {
+  .central-image-overlay strong {
     display: flex;
     align-items: center;
-    gap: 0.45rem;
+    gap: 0.6rem;
+    margin-top: 0.45rem;
+    font-size: 1rem;
   }
 
-  .fake-table-row i {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+  .central-image-link:hover img {
+    transform: scale(1.02);
+    filter: brightness(0.8);
   }
 
-  .fake-table-row i.purple {
-    background: #8a70ff;
-  }
-
-  .fake-table-row i.blue {
-    background: #6590ff;
-  }
-
-  .fake-table-row i.green {
-    background: #4fda8b;
-  }
-
-  .fake-table-row b {
-    color: #66c58e;
-    font-size: 0.45rem;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
-  .small-preview-panel {
-    text-align: center;
-  }
-
-  .service-ring {
-    width: 70px;
-    height: 70px;
-    margin: 1rem auto;
-    border: 5px solid rgba(124, 92, 255, 0.14);
-    border-top-color: #795bff;
-    border-radius: 50%;
+  .central-image-link:hover .central-image-overlay {
+    opacity: 1;
   }
 
   .visual-label {
@@ -746,53 +921,174 @@
     left: -1rem;
   }
 
-  .secondary-project {
-    margin-top: 8rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
-  }
+  /* PROJECT GRID */
 
-  .secondary-content {
+  .project-grid {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr auto;
-    gap: 4rem;
-    align-items: center;
-    margin-top: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 8rem;
   }
 
-  .secondary-main p {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(8, 10, 15, 0.68);
+    transition:
+      transform 200ms ease,
+      border-color 200ms ease,
+      box-shadow 200ms ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(124, 92, 255, 0.28);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.18);
+  }
+
+  .project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-card-main {
+    padding: 1.5rem;
+  }
+
+  .project-card-main h3 {
+    margin: 1rem 0;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }
+
+  .project-card-description {
+    min-height: 8.5rem;
     color: var(--text-muted);
+    font-size: 0.82rem;
     line-height: 1.8;
   }
 
-  .secondary-terminal {
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: #080a0f;
-  }
-
-  .terminal-heading {
+  .project-card-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+    padding: 1rem 1.2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .project-card-footer > span {
+    color: #625c74;
+    font-size: 0.46rem;
+  }
+
+  .project-card-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #a392ff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition:
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .card-text-link:hover {
+    color: white;
+    transform: translateY(-1px);
+  }
+
+  .card-text-link span {
+    transition: transform 180ms ease;
+  }
+
+  .card-text-link:hover span {
+    transform: translateX(2px);
+  }
+
+  .muted-link {
+    color: #737b88;
+  }
+
+  .muted-link:hover {
+    color: #b5bac4;
+  }
+
+  .project-card-footer {
+    flex-wrap: wrap;
+  }
+  .card-arrow {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    border-radius: 50%;
+    color: #9989ff;
+    transition:
+      transform 180ms ease,
+      background 180ms ease;
+  }
+
+  .card-arrow:hover {
+    transform: translate(2px, -2px);
+    background: rgba(124, 92, 255, 0.08);
+  }
+
+  /* TERMINAL */
+
+  .terminal-window,
+  .pipeline-window,
+  .homelab-visual {
+    margin: 0 1.2rem 1.2rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: #07090e;
+  }
+
+  .terminal-heading,
+  .pipeline-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
     padding: 0.8rem 1rem;
     border-bottom: 1px solid var(--border);
     color: #625c74;
-    font-size: 0.5rem;
+    font-size: 0.48rem;
   }
 
-  .terminal-online {
+  .terminal-online,
+  .pipeline-state {
     color: #68bd8a;
   }
 
   .terminal-lines {
-    padding: 1.2rem;
-    font-size: 0.62rem;
+    padding: 1.1rem;
+    font-size: 0.6rem;
   }
 
   .terminal-lines p {
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 28px 1fr;
   }
 
   .terminal-lines p > span {
@@ -803,24 +1099,143 @@
     color: #9b8cff;
   }
 
-  .secondary-arrow {
+  /* DEPLOYMENT PIPELINE */
+
+  .pipeline-flow {
     display: grid;
-    place-items: center;
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(124, 92, 255, 0.3);
-    border-radius: 50%;
-    color: #9989ff;
-    font-size: 1.3rem;
-    transition:
-      transform 180ms ease,
-      background 180ms ease;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 1.2rem;
   }
 
-  .secondary-arrow:hover {
-    transform: translate(3px, -3px);
-    background: rgba(124, 92, 255, 0.08);
+  .pipeline-step {
+    min-width: 0;
   }
+
+  .pipeline-step > div,
+  .pipeline-step strong,
+  .pipeline-step span {
+    display: block;
+  }
+
+  .pipeline-icon {
+    margin-bottom: 0.6rem;
+    color: #8d7aff;
+    font-size: 0.5rem;
+  }
+
+  .pipeline-step strong {
+    font-size: 0.78rem;
+  }
+
+  .pipeline-step > div > span {
+    margin-top: 0.25rem;
+    color: #68707c;
+    font-size: 0.52rem;
+  }
+
+  .pipeline-arrow {
+    color: #554d67;
+  }
+
+  /* HOMELAB */
+
+  .infrastructure-card {
+    border-color: rgba(124, 92, 255, 0.18);
+  }
+
+  .homelab-visual {
+    position: relative;
+    padding: 1.4rem;
+  }
+
+  .homelab-node {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.012);
+  }
+
+  .homelab-node span,
+  .homelab-node strong,
+  .homelab-node small {
+    display: block;
+  }
+
+  .homelab-node span {
+    color: #625c74;
+    font-size: 0.46rem;
+  }
+
+  .homelab-node strong {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .homelab-node small {
+    margin-top: 0.25rem;
+    color: #68707d;
+    font-size: 0.54rem;
+  }
+
+  .homelab-line {
+    position: relative;
+    width: 1px;
+    height: 30px;
+    margin: 0 auto;
+    background: rgba(124, 92, 255, 0.35);
+  }
+
+  .homelab-line span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 9px;
+    background: #8068ff;
+    box-shadow: 0 0 10px rgba(128, 104, 255, 0.6);
+    transform: translateX(-50%);
+    animation: service-flow 2s linear infinite;
+  }
+
+  @keyframes service-flow {
+    from {
+      top: 0;
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    to {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+
+  .homelab-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.45rem;
+    margin-top: 0.8rem;
+  }
+
+  .homelab-services span {
+    padding: 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: #858c99;
+    font-family: var(--font-mono);
+    font-size: 0.48rem;
+  }
+
+  /* NEXT */
 
   .project-next {
     display: grid;
@@ -848,15 +1263,28 @@
     background: var(--border);
   }
 
+  /* RESPONSIVE */
+
   @media (max-width: 1180px) {
     .featured-project-grid {
       gap: 4rem;
     }
+
+    .project-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .infrastructure-card {
+      grid-column: 1 / -1;
+    }
+
+    .project-card-description {
+      min-height: 0;
+    }
   }
 
   @media (max-width: 1050px) {
-    .featured-project-grid,
-    .secondary-content {
+    .featured-project-grid {
       grid-template-columns: 1fr;
     }
 
@@ -866,10 +1294,32 @@
     }
 
     .project-visual {
-      width: min(100%, 820px);
+      width: min(100%, 900px);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .project-grid {
+      grid-template-columns: 1fr;
     }
 
-    .secondary-arrow {
+    .infrastructure-card {
+      grid-column: auto;
+    }
+
+    .preview-topbar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .preview-topbar p {
+      display: none;
+    }
+
+    .central-image-overlay {
+      display: none;
+    }
+
+    .visual-label {
       display: none;
     }
   }
@@ -879,15 +1329,26 @@
       padding: 6rem 0;
     }
 
-    .project-metadata,
-    .preview-stat-row,
-    .preview-panels {
+    .project-metadata {
       grid-template-columns: 1fr;
     }
 
-    .small-preview-panel,
-    .visual-label {
-      display: none;
+    .project-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .project-button {
+      width: 100%;
+    }
+
+    .pipeline-flow {
+      grid-template-columns: 1fr;
+    }
+
+    .pipeline-arrow {
+      transform: rotate(90deg);
+      justify-self: start;
     }
 
     .project-next {
@@ -897,6 +1358,21 @@
 
     .project-next-line {
       width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-card,
+    .central-image-shell,
+    .central-image-wrapper img,
+    .central-image-overlay,
+    .project-button,
+    .card-arrow {
+      transition: none;
+    }
+
+    .homelab-line span {
+      animation: none;
     }
   }
 </style>
