@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etterdigital.dev/sitemap-index.xml

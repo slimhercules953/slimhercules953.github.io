@@ -6,30 +6,171 @@ import SiteFooter from "../components/SiteFooter.astro";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  type?: "website" | "article";
+  noindex?: boolean;
 }
 
 const {
   title = "Etter Digital | Infrastructure, Networking & Software",
   description = "Etter Digital — infrastructure, networking, automation, self-hosting, and software projects by Thomas Etter.",
+  image = "/images/social/etter-digital-og.png",
+  type = "website",
+  noindex = false,
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(image, Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content={description} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content={description}
+    />
+
+    <meta
+      name="robots"
+      content={noindex ? "noindex, nofollow" : "index, follow"}
+    />
+
+    <meta
+      name="author"
+      content="Thomas Etter"
+    />
+
+    <meta
+      name="theme-color"
+      content="#05060a"
+    />
 
     <title>{title}</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="canonical"
+      href={canonicalURL}
+    />
+
+    <!-- OPEN GRAPH -->
+
+    <meta
+      property="og:title"
+      content={title}
+    />
+
+    <meta
+      property="og:description"
+      content={description}
+    />
+
+    <meta
+      property="og:type"
+      content={type}
+    />
+
+    <meta
+      property="og:url"
+      content={canonicalURL}
+    />
+
+    <meta
+      property="og:site_name"
+      content="Etter Digital"
+    />
+
+    <meta
+      property="og:image"
+      content={socialImageURL}
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Etter Digital — infrastructure, networking, and software engineering portfolio."
+    />
+
+    <!-- TWITTER / SOCIAL -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={title}
+    />
+
+    <meta
+      name="twitter:description"
+      content={description}
+    />
+
+    <meta
+      name="twitter:image"
+      content={socialImageURL}
+    />
+
+    <!-- ICONS -->
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <link
+      rel="alternate icon"
+      href="/favicon.ico"
+    />
+
+    <!-- FONTS -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
+    />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Thomas Etter",
+        url: "https://etterdigital.dev",
+        sameAs: [
+          "https://github.com/slimhercules953"
+        ],
+        knowsAbout: [
+          "Networking",
+          "Linux",
+          "Infrastructure",
+          "Self-hosting",
+          "Automation",
+          "Software Development",
+          "PostgreSQL",
+          "Cloudflare",
+          "Raspberry Pi"
+        ]
+      })}
     />
   </head>
 
@@ -43,12 +184,16 @@ const {
     <SiteFooter />
 
     <script>
-      const menuButton = document.querySelector(".menu-button");
-      const mobileNavigation = document.querySelector(".mobile-nav");
+      const menuButton =
+        document.querySelector(".menu-button");
+
+      const mobileNavigation =
+        document.querySelector(".mobile-nav");
 
       if (menuButton && mobileNavigation) {
         menuButton.addEventListener("click", () => {
-          const isOpen = mobileNavigation.classList.toggle("open");
+          const isOpen =
+            mobileNavigation.classList.toggle("open");
 
           menuButton.setAttribute(
             "aria-expanded",
@@ -82,12 +227,12 @@ const {
           });
       }
 
-      const year = document.querySelector("#year");
+      const year =
+        document.querySelector("#year");
 
       if (year) {
-        year.textContent = String(
-          new Date().getFullYear()
-        );
+        year.textContent =
+          String(new Date().getFullYear());
       }
     </script>
   </body>
